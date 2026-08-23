@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Percubaan SDEA 2025 - MMJ (DE 204)</title>
+    <title>Portal Interaktif SDEA 2025 - Akhlak & Tasauf</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,10 +22,10 @@
                 extend: {
                     colors: {
                         sys: {
-                            900: '#1e1b4b', // Deep Indigo Theme for Percubaan
-                            800: '#312e81',
-                            700: '#4338ca',
-                            accent: '#6366f1',
+                            900: '#881337', // Deep Rose / Pink
+                            800: '#9f1239',
+                            700: '#be123c',
+                            accent: '#f43f5e',
                         }
                     },
                     fontFamily: {
@@ -69,12 +69,12 @@
                 
                 <!-- Logo & Title -->
                 <div class="flex items-center gap-3 w-full sm:w-auto">
-                    <div id="header-logo-bg" class="w-10 h-10 rounded-lg bg-indigo-800 border border-indigo-600 flex items-center justify-center font-bold text-xl shadow-inner font-jawi text-sys-accent transition-colors duration-300">
-                        م
+                    <div id="header-logo-bg" class="w-10 h-10 rounded-lg bg-rose-800 border border-rose-600 flex items-center justify-center font-bold text-xl shadow-inner font-jawi text-sys-accent transition-colors duration-300">
+                        ا
                     </div>
                     <div>
                         <h1 class="text-base font-bold leading-tight">Portal SDEA 2025 (Pusat Peperiksaan)</h1>
-                        <p id="header-subtitle" class="text-[10px] text-indigo-200 uppercase tracking-widest">Kertas Percubaan: MMJ (DE 204)</p>
+                        <p id="header-subtitle" class="text-[10px] text-rose-200 uppercase tracking-widest">Kertas Aktif: Akhlak & Tasauf (DE 206)</p>
                     </div>
                 </div>
 
@@ -122,15 +122,15 @@
             <div id="dashboard-banner" class="rounded-2xl p-6 sm:p-8 text-white shadow-md relative overflow-hidden transition-colors duration-500 bg-sys-800">
                 <div class="relative z-10 max-w-3xl">
                     <span id="banner-badge" class="inline-block px-3 py-1 bg-white/25 text-white text-xs font-semibold rounded-full mb-3 uppercase tracking-wider backdrop-blur-sm">
-                        Modul Aktif: MMJ (PERCUBAAN)
+                        Modul Aktif: AKHLAK & TASAUF (SEBENAR)
                     </span>
-                    <h2 id="banner-title" class="text-2xl sm:text-3xl font-bold mb-2">Peperiksaan Percubaan SDEA 2025</h2>
-                    <p id="banner-desc" class="text-indigo-100 text-sm sm:text-base leading-relaxed">
-                        Anda sedang melayari modul Percubaan SDEA 2025 bagi subjek Muamalat, Munakahat & Jinayat. Sila beralih tab di atas untuk mula menjawab soalan.
+                    <h2 id="banner-title" class="text-2xl sm:text-3xl font-bold mb-2">Peperiksaan Sijil Darjah Enam Agama (SDEA) 2025</h2>
+                    <p id="banner-desc" class="text-rose-100 text-sm sm:text-base leading-relaxed">
+                        Anda sedang melayari modul rasmi SDEA 2025 bagi subjek Akhlak dan Tasauf. Sila beralih tab di atas untuk mula menyemak jawapan atau menjawab soalan secara kendiri.
                     </p>
                 </div>
                 <div id="banner-bg-icon" class="absolute -right-6 -bottom-10 opacity-10 font-jawi text-[180px] pointer-events-none select-none">
-                    م
+                    ا
                 </div>
             </div>
 
@@ -138,8 +138,8 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="bg-white p-5 rounded-xl border border-stone-200 shadow-sm">
                     <p class="text-xs text-slate-500 font-medium">Subjek Pilihan</p>
-                    <p id="kpi-subject-text" class="text-lg sm:text-xl font-bold text-sys-900 mt-1 uppercase">MMJ</p>
-                    <span class="text-[10px] text-slate-400 mt-1 inline-block">Kertas Kod DE 204</span>
+                    <p id="kpi-subject-text" class="text-lg sm:text-xl font-bold text-sys-900 mt-1 uppercase">AKHLAK</p>
+                    <span class="text-[10px] text-slate-400 mt-1 inline-block">Kertas Kod DE 206</span>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-stone-200 shadow-sm">
                     <p class="text-xs text-slate-500 font-medium">Status Mod</p>
@@ -151,10 +151,10 @@
                     <p class="text-xl sm:text-2xl font-bold text-slate-900 mt-1">100 Markah</p>
                     <span class="text-[10px] text-slate-400 mt-1 inline-block">Alif (40m) & Ba (60m)</span>
                 </div>
-                <div id="kpi-score-card" class="bg-indigo-50 border border-indigo-200 p-5 rounded-xl shadow-sm transition-colors">
-                    <p id="kpi-score-title" class="text-xs text-indigo-800 font-bold mb-1">Skor Kuiz Objektif</p>
-                    <p id="kpi-score-set1" class="text-2xl sm:text-3xl font-bold text-indigo-600">0 / 20</p>
-                    <span class="text-[10px] text-indigo-800/70">Jawab di bahagian objektif</span>
+                <div id="kpi-score-card" class="bg-rose-50 border border-rose-200 p-5 rounded-xl shadow-sm transition-colors">
+                    <p id="kpi-score-title" class="text-xs text-rose-800 font-bold mb-1">Skor Kuiz Objektif</p>
+                    <p id="kpi-score-set1" class="text-2xl sm:text-3xl font-bold text-rose-600">0 / 20</p>
+                    <span class="text-[10px] text-rose-800/70">Jawab di Bahagian Alif</span>
                 </div>
             </div>
 
@@ -163,7 +163,7 @@
                 <div class="bg-white p-5 rounded-xl border border-stone-200 shadow-sm">
                     <div>
                         <h3 class="text-base font-bold text-slate-900 mb-1">Pecahan Markah Peperiksaan</h3>
-                        <p class="text-xs text-slate-500 mb-4">Struktur format kertas peperiksaan MMJ.</p>
+                        <p class="text-xs text-slate-500 mb-4">Struktur format kertas peperiksaan Akhlak (DE 206).</p>
                     </div>
                     <div class="chart-container"><canvas id="marksChart"></canvas></div>
                 </div>
@@ -183,7 +183,7 @@
                     <div>
                         <span id="objektif-subtitle" class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bahagian Alif (40 Markah)</span>
                         <h2 class="text-xl font-bold text-slate-900 mt-0.5">Soalan Objektif (1 - 20)</h2>
-                        <p class="text-xs text-slate-500 mt-1">Setiap soalan membawa 2 markah. Pilih jawapan yang paling tepat.</p>
+                        <p class="text-xs text-slate-500 mt-1">Setiap soalan membawa 2 markah.</p>
                     </div>
                 </div>
             </div>
@@ -211,16 +211,16 @@
             <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
                 <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bahagian Ba (10 Markah)</span>
                 <h2 class="text-xl font-bold text-slate-900 mt-0.5">Soalan Betul / Salah (26 - 30)</h2>
-                <p class="text-xs text-slate-500 mt-1">Tuliskan hukum (Betul) atau (Salah) pada pernyataan berikut.</p>
+                <p class="text-xs text-slate-500 mt-1">Tuliskan (بتول) atau (ساله) pada pernyataan berikut.</p>
             </div>
             <div id="short-answer-container" class="grid sm:grid-cols-2 gap-4"></div>
         </section>
 
         <section id="sec-petaminda" class="space-y-6 hidden">
             <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
-                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bahagian Ba (10 Markah)</span>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bahagian Ba (Peta Minda)</span>
                 <h2 id="mindmap-heading" class="text-xl font-bold text-slate-900 mt-0.5">Lengkapkan Peta Minda (31 - 35)</h2>
-                <p class="text-xs text-slate-500 mt-1">Lengkapkan ruang kosong peta minda berikut.</p>
+                <p class="text-xs text-slate-500 mt-1">Lengkapkan rajah peta minda berikut.</p>
             </div>
 
             <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-6">
@@ -244,7 +244,7 @@
             <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
                 <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bahagian Ba (30 Markah)</span>
                 <h2 id="structured-heading" class="text-xl font-bold text-slate-900 mt-0.5">Soalan Berstruktur (36 - 40)</h2>
-                <p class="text-xs text-slate-500 mt-1">Jawab semua soalan berikut berdasarkan petikan, hukum dan pemahaman.</p>
+                <p class="text-xs text-slate-500 mt-1">Jawab semua soalan berikut berdasarkan skema pemarkahan.</p>
             </div>
 
             <div id="berstruktur-container" class="space-y-6"></div>
@@ -253,71 +253,72 @@
     </main>
 
     <script>
+        // --- GLOBAL STATE ---
         let currentMode = 'skema';     // 'skema' or 'kuiz'
         let userQuizAnswers = {};
         let chartsInstance = { marks: null, topics: null };
 
-        // MASTER DATABASE (MMJ PERCUBAAN 2025)
+        // --- MASTER DATABASES (AKHLAK SEBENAR 2025) ---
         const activeData = {
-            title: "Set Percubaan MMJ 2025 (DE 204)",
-            badgeText: "Modul Aktif: MMJ (PERCUBAAN)",
-            logoText: "م",
-            stats: { t1: 11, t2: 9 }, // Approximate ratio Mua/Mun vs Jinayat for Percubaan
-            statLabels: ["Muamalat / Munakahat", "Jinayat"],
+            title: "Set Sebenar Akhlak 2025 (DE 206)",
+            badgeText: "Modul Aktif: AKHLAK (SEBENAR)",
+            logoText: "ا",
+            stats: { t1: 10, t2: 10 }, // Estimation: 10 Adab/Akhlak, 10 Tasauf
+            statLabels: ["Akhlak & Adab", "Tasauf & Hati"],
             objektif: [
-                { id: 1, topic: 'topic1', qArabic: "اقاكه حكوم الْمُخَابَرَة دان الْمُزَارَعَة؟", qMalay: "Apakah hukum Al-Mukhabarah dan Al-Muzara'ah?", options: { a: "سنة", b: "صح", c: "تيدق صح", d: "هاروس" }, ans: "d", exp: "Hukum asal sistem pawah dan perkongsian untung hasil pertanian adalah Harus selagi tiada unsur kezaliman." },
-                { id: 2, topic: 'topic1', qArabic: "إسلام مفاجر اومتن اونتوق _____ سچا را بنر دان عادیل.", qMalay: "Islam mengajar umatnya untuk _____ secara benar dan adil.", options: { a: "برستوجو", b: "برعبادة", c: "بر معاملات", d: "براوسها" }, ans: "c", exp: "Asas urusan jual beli (Muamalat) di dalam Islam ditegakkan atas kebenaran dan keadilan." },
-                { id: 3, topic: 'topic1', qArabic: "قلابورن دكنلي سباكاي _____.", qMalay: "Pelaburan (dalam kewangan Islam) dikenali sebagai _____.", options: { a: "الْمُضَارَبَة", b: "اللقطة", c: "المزارعة", d: "الْمُخَابَرَة" }, ans: "a", exp: "Al-Mudharabah (atau Al-Qiradh) merujuk kepada perniagaan / pelaburan di mana satu pihak sedia modal dan pihak lain berikan kepakaran." },
-                { id: 4, topic: 'topic1', qArabic: "برايکوت اداله فركا رايغ ممبطلكن عقد القراض.<br>i. كيلا<br>ii. فيتم<br>iii. برعقل<br>iv. بالغ", qMalay: "Berikut adalah perkara yang membatalkan akad Al-Qiradh:", options: { a: "i دان ii", b: "i دان iii", c: "ii دان iii", d: "iii دان iv" }, ans: "a", exp: "Akad terbatal (hilang kelayakan mengurus harta) sekiranya berlaku gila atau pengsan / pitam (i & ii)." },
-                { id: 5, topic: 'topic1', qArabic: "تانه _____ اداله ميليق كراجاءن.", qMalay: "Tanah _____ adalah milik kerajaan.", options: { a: "تربیار", b: "قرتانين", c: "سنديري", d: "توان كبون" }, ans: "a", exp: "Tanah mati atau terbiar (Ihya' Al-Mawat) kebiasaannya hak milik kerajaan melainkan diterokai mengikut undang-undang (dibolehkan)." },
-                { id: 6, topic: 'topic1', qArabic: "افا كه ايستيله يع دكوناكن باكي بارغ يغ دجو مقاءي", qMalay: "Apakah istilah yang digunakan bagi barang yang dijumpai?", options: { a: "اللقطة", b: "القراض", c: "اللقيط", d: "إِحْيَاءُ المَوات" }, ans: "a", exp: "Al-Luqatah ialah harta atau barang berharga yang tercicir dan dijumpai." },
-                { id: 7, topic: 'topic1', qArabic: "اللقيط اياله كانق ٢ يع ترجمفق<br><br>بردا سر كن قرياتاءن داتس، اقاکه شرط مميندهكن لقيط كنكري لاءين ؟", qMalay: "Al-Laqit ialah kanak-kanak yang tercampak. Apakah syarat memindahkan laqit ke negeri lain?", options: { a: "تیدق امان", b: "تیاد بریتا", c: "فرجالنن سلامت", d: "فوتوس هو بوغن" }, ans: "c", exp: "Boleh dipindahkan anak pungut itu dengan syarat perjalanannya ke negeri tersebut terjamin selamat." },
-                { id: 8, topic: 'topic1', qArabic: "برافا كه بها كين لفظ رجوع ؟", qMalay: "Berapakah bahagian lafaz rujuk?", options: { a: "دوا", b: "تیک", c: "امقت", d: "ليم" }, ans: "a", exp: "Lafaz rujuk terbahagi kepada 2: Sarih (Jelas) dan Kinayah (Kiasan)." },
-                { id: 9, topic: 'topic1', qArabic: "برايکوت اداله صح طلاق برسومفه کچوالي", qMalay: "Berikut adalah sah talaq bersumpah (oleh suami) KECUALI...", options: { a: "سدر", b: "بها كيا", c: "تيدق کیلا", d: "تيدق دفقسا" }, ans: "b", exp: "Syarat sah pelafaz: Baligh, berakal, atas kerelaan sendiri (tidak dipaksa), dan sedar. 'Bahagia' bukan syarat sah menjatuhkan talak." },
-                { id: 10, topic: 'topic1', qArabic: "شرط إيلاء باكي ايستري اداله براد دالم ولاية _____.", qMalay: "Syarat Ila' bagi isteri adalah berada dalam wilayah _____.", options: { a: "نكري", b: "ايبو", c: "باف", d: "سوامي" }, ans: "d", exp: "Syarat isteri yang diila' hendaklah sah sebagai isteri (berada di bawah kekuasaan suami)." },
-                { id: 11, topic: 'topic1', qArabic: "كفارة ظهار اكن كوتور جک برلا کو _____.", qMalay: "Kaffarah Zihar akan gugur jika berlaku _____.", options: { a: "کیلا", b: "كماتين", c: "فيتم", d: "طلاق بائن" }, ans: "b", exp: "Jika salah seorang suami isteri mati, kewajipan kaffarah Zihar gugur kerana perkahwinan telah terbatal." },
-                { id: 12, topic: 'topic2', qArabic: "قربیچارا ءن قذف مستي دحاضيري اوليه<br>i. حاكيم<br>ii. اورغ يغ دتودوه<br>iii. كتوا كامفوع<br>iv. اورغ یغ منودوه", qMalay: "Perbicaraan Qazaf (Tuduhan Zina) mesti dihadiri oleh:", options: { a: "i دان ii", b: "i دان iii", c: "ii, i دان iii", d: "ii, i دان iv" }, ans: "d", exp: "Kehadiran Hakim, Pihak Penuduh, dan Pihak Tertuduh diwajibkan dalam mahkamah syariah." },
-                { id: 13, topic: 'topic2', qArabic: "تودوهن قذف يغ دراكوءي، اورغ يغ منودوه اکن دحکوم سبت _____.", qMalay: "Tuduhan qazaf yang tidak dapat dibuktikan, orang yang menuduh akan dihukum sebatan _____.", options: { a: "40 كالي", b: "60 كالي", c: "80 كالي", d: "100 كالي" }, ans: "c", exp: "Hukuman hudud qazaf ke atas penuduh (jika gagal bawa 4 saksi) ialah 80 kali sebatan." },
-                { id: 14, topic: 'topic2', qArabic: "اقا که ارتي لعان قد بهاس ؟", qMalay: "Apakah erti Li'an pada bahasa?", options: { a: "بواغ", b: "سقسي", c: "میاماکن", d: "تودوه" }, ans: "a", exp: "Li'an dari segi bahasa bermaksud buang / laknat (jauh dari rahmat Allah)." },
-                { id: 15, topic: 'topic2', qArabic: "تيندقن يغ دكناكن كقد _____ ایاله تروس دبونوه.", qMalay: "Tindakan yang dikenakan ke atas _____ ialah terus dibunuh (jika menceroboh nyawa).", options: { a: "فمك امانه", b: "اورغ إسلام", c: "فنچر وبوه كافير", d: "قمباوا بيناتغ" }, ans: "c", exp: "Bagi penceroboh kafir harbi yang mengancam nyawa (As-Siyal), hukum pertahanan diri membenarkan terus membunuhnya jika tiada jalan lain." },
-                { id: 16, topic: 'topic2', qArabic: "مسفر سنداكن حكوم إسلام ٢ اداله چونتوه مرتد سچارا _____.", qMalay: "Mempersendakan hukum-hakam Islam adalah contoh murtad secara _____.", options: { a: "نية", b: "تردد", c: "قربواتن", d: "فركاتاءن" }, ans: "d", exp: "Menghina atau memperolok-olokkan syariat (hukum Islam) melalui ucapan mulut adalah murtad secara perkataan." },
-                { id: 17, topic: 'topic2', qArabic: "فتكونا ءن كقواتن دان _____ اداله چيري كسالهن ممبر ونتق.", qMalay: "Penggunaan kekuatan dan _____ adalah ciri kesalahan memberontak (Bughah).", options: { a: "كلمبوتن", b: "ککرسن", c: "ممبونوه", d: "ککاچاوان" }, ans: "b", exp: "Kekerasan (Al-Quwwah/Syaukah) ke atas pemerintah adalah intipati jenayah Al-Bughah." },
-                { id: 18, topic: 'topic2', qArabic: "اقاكه يع داغكف قربواتن مندرهاک ؟", qMalay: "Apakah yang dianggap perbuatan menderhaka (pemerintah)?", options: { a: "قاتوه اوندغ ٢", b: "قمرينته عاديل", c: "ملقسانا كن كواجيفن", d: "مننتغ قمرينته" }, ans: "d", exp: "Menentang pemerintah (kerajaan Islam) yang adil dianggap sebagai menderhaka." },
-                { id: 19, topic: 'topic2', qArabic: "برایکوت اداله چونتوه فر لومباءن کچوالي", qMalay: "Berikut adalah contoh sukan perlumbaan yang disunatkan KECUALI...", options: { a: "برنغ", b: "ممانه", c: "لومبا لاري", d: "لومبا كودا" }, ans: "a", exp: "Menurut syarak yang sangat digalakkan untuk perlumbaan: Kuda, Unta, Lari, & Memanah. Berenang adalah sukan yang dianjurkan (tapi bukan khusus kategori musabaqah/lumba)." },
-                { id: 20, topic: 'topic2', qArabic: "كافير يغ ممينتا قرليندوغن إسلام تيدق بوليه دقرغي<br><br>بردا سر کن فرياتاءن داتس، اقاكه كافير يغ مموسوهي اورغ إسلام ؟", qMalay: "Kafir yang meminta perlindungan... Apakah kafir yang memusuhi orang Islam?", options: { a: "ذمي", b: "حَرْبِي", c: "معاهد", d: "مُسْتَأْمِن" }, ans: "b", exp: "Kafir Harbi merujuk kepada golongan bukan Islam yang secara terang-terangan memerangi / memusuhi umat Islam." }
+                { id: 1, topic: 'topic1', qArabic: "براقا که سومبر امبيلن اخلاق إسلامية؟", qMalay: "Berapakah sumber ambilan Akhlak Islamiah?", options: { a: "دوا", b: "تیک", c: "امقت", d: "ليم" }, ans: "a", exp: "Sumber akhlak Islamiah yang utama diambil daripada dua sumber iaitu Al-Quran dan As-Sunnah." },
+                { id: 2, topic: 'topic1', qArabic: "كلبيهن ممثلا جري علمو اخلاق داقت ممبنتوق", qMalay: "Kelebihan mempelajari ilmu akhlak dapat membentuk...", options: { a: "کمیواهن", b: "فراساءن", c: "كفریبادین", d: "سماعت" }, ans: "c", exp: "Ilmu akhlak dapat membentuk peribadi mulia (Keperibadian) pada seseorang pelajar/muslim." },
+                { id: 3, topic: 'topic1', qArabic: "برايکوت اداله کفنتيغن منجاک عالم سكيتر كجوالي", qMalay: "Berikut adalah kepentingan menjaga alam sekitar KECUALI...", options: { a: "ماءنسي داقت بابق منفعت", b: "منداقت باپق هر تا", c: "منجامين هيدوق صيحت", d: "مظهر كاءي انو كره الله" }, ans: "b", exp: "Mendapat banyak harta bukanlah kepentingan utama penjagaan alam sekitar dalam konteks agama/sosial." },
+                { id: 4, topic: 'topic1', qArabic: "برايکوت اداله بنتوق ۲ فنچمرن. i کس ii اسید iii امير iv او دارا", qMalay: "Berikut adalah bentuk-bentuk pencemaran: i gas, ii asid, iii air, iv udara", options: { a: "i دان ii", b: "ii دان iii", c: "i دان iv", d: "iii دان iv" }, ans: "d", exp: "Bentuk pencemaran alam sekitar yang utama dan asas ialah pencemaran air dan pencemaran udara (iii dan iv)." },
+                { id: 5, topic: 'topic1', qArabic: "اقا که ادب کچینتاءن کقد نکارا", qMalay: "Apakah adab kecintaan kepada negara?", options: { a: "مروسقكن عالم", b: "کورغ کسدرن سیویک", c: "بكر جاسام دغن موسوه", d: "مما توهي ركن نكارا" }, ans: "d", exp: "Antara adab cintakan negara adalah dengan mematuhi Rukun Negara dan undang-undang." },
+                { id: 6, topic: 'topic1', qArabic: "اورغ يغ منجينتاءي نكارا اکن ممقر تا هنکن نکارا دان سعكوف", qMalay: "Orang yang mencintai negara akan mempertahankan negara dan sanggup...", options: { a: "برقربان", b: "برکادوه", c: "داعتراف", d: "دسانجوغ" }, ans: "a", exp: "Rakyat yang patriotik akan sanggup berkorban jiwa dan harta demi negara." },
+                { id: 7, topic: 'topic2', qArabic: "اقاکه فغرتين احسان منوروت بهاس؟", qMalay: "Apakah pengertian Ihsan menurut bahasa?", options: { a: "چینتا", b: "منريما", c: "بربوات باءيق", d: "برکاسیه سایغ" }, ans: "c", exp: "Ihsan dari segi bahasa bermaksud berbuat kebaikan." },
+                { id: 8, topic: 'topic2', qArabic: "صیفت احسان دالم بر عبادة سفرتي جهاد دان انق.", qMalay: "Sifat ihsan dalam beribadah seperti jihad dan anak.", options: { a: "منديديق", b: "ممارهي", c: "منجاء وهي", d: "مماتوهي" }, ans: "a", exp: "Sifat ihsan terhadap anak adalah dengan cara mendidik (tarbiyah) mereka sebaik mungkin." },
+                { id: 9, topic: 'topic2', qArabic: "معصية يغ ممباوا كقد دوسا اياله مينوم ارق دان.", qMalay: "Maksiat yang membawa kepada dosa ialah meminum arak dan...", options: { a: "امانه", b: "جوجور", c: "بر دوستا", d: "بر چاکف بنر" }, ans: "c", exp: "Berdusta (menipu) adalah sifat maksiat dan mazmumah yang dilarang keras." },
+                { id: 10, topic: 'topic2', qArabic: "مغعملكن سيكف برقواس هاتي دغن اف يغ اد باكي منچاقاي کمانيسن صيفت رضا.", qMalay: "Mengamalkan sikap berpuas hati dengan apa yang ada bagi mencapai kemanisan sifat redha. Sifat ini ialah...", options: { a: "قَنَاعَة", b: "تواضع", c: "احسان", d: "اخلاص" }, ans: "a", exp: "Qana'ah ialah sifat merasa cukup (berpuas hati) dengan pemberian dan rezeki dari Allah." },
+                { id: 11, topic: 'topic2', qArabic: "منمفقكن كرندهن هاتي كقد سسواتو يغ داكو شكن اداله مقصود.", qMalay: "Menampakkan kerendahan hati kepada sesuatu yang diagungkan adalah maksud...", options: { a: "رضا", b: "تواضع", c: "تَفَكَّر", d: "احسان" }, ans: "b", exp: "Tawaduk bermaksud merendah diri dan tidak sombong." },
+                { id: 12, topic: 'topic1', qArabic: "برايکوت اداله صیفت تواضع كقد كورو كچوالي", qMalay: "Berikut adalah sifat tawaduk kepada guru KECUALI...", options: { a: "مغوچفکن سلام", b: "دو دوق دغن سوفن", c: "ملقسانا كن لا رغن كورو", d: "منجاک نام باءیق" }, ans: "c", exp: "Melaksanakan larangan (benda yang dilarang) guru BUKAN sifat tawaduk. Mematuhi arahannya adalah adab." },
+                { id: 13, topic: 'topic2', qArabic: "اقاكه ارتي تفكر قد بهاس؟", qMalay: "Apakah erti Tafakkur pada bahasa?", options: { a: "مميكيركن", b: "مموليا كن", c: "مندعاء كن", d: "مرندهکن" }, ans: "a", exp: "Tafakkur bermaksud memikirkan atau merenungkan kekuasaan Allah." },
+                { id: 14, topic: 'topic2', qArabic: "تفكر يع بتول اكن ملاهيركن فراساءن .", qMalay: "Tafakkur yang betul akan melahirkan perasaan...", options: { a: "چینتا كقد الله", b: "بنچي كقد کلوارک", c: "چینتا کفد هر تا", d: "تاكوت كقد ديري سنديري" }, ans: "a", exp: "Tafakkur akan mendekatkan dan menambah kecintaan kepada Pencipta." },
+                { id: 15, topic: 'topic2', qArabic: "عجب برلا کو دسببکن سریع منريما دان مراس سنغ دغنن.", qMalay: "Ujub berlaku disebabkan sering menerima dan merasa senang dengannya...", options: { a: "فوجين", b: "چاچین", c: "قمبريين", d: "فرتولوغن" }, ans: "a", exp: "Ujub (Syok sendiri) sering timbul kerana terlalu asyik mendengar pujian orang terhadap dirinya." },
+                { id: 16, topic: 'topic2', qArabic: "برايکوت اداله ارتي الظن قد بهاس. i کراکوان ii ستكاءن iii سسواتويخ تيدق قستي iv كاكوم قد ديري", qMalay: "Berikut adalah erti Az-Zan pada bahasa: i Keraguan, ii Sangkaan, iii Sesuatu tidak pasti, iv Kagum pada diri.", options: { a: "iii دان iii", b: "ii i دان iv", c: "iii ، i دان iv", d: "iii ، ii ، i دان iv" }, ans: "c", exp: "Az-Zan bermaksud keraguan, sangkaan, dan ketidakpastian. (Berdasarkan opsyen kertas soalan asal yang agak kabur, jawapan skema c diandaikan merujuk kepada i, ii, iii tanpa iv (Ujub))." },
+                { id: 17, topic: 'topic2', qArabic: "اقا که کسن بر سڤک بوروق ترهادف الله ؟", qMalay: "Apakah kesan bersangka buruk (Su'uzan) terhadap Allah?", options: { a: "کنجرن فهالا", b: "دفندع تيغكي", c: "دفوجي ماء نسي", d: "دموركاءي الله" }, ans: "d", exp: "Bersangka buruk (Su'uzan) terhadap perancangan Allah akan mengundang kemurkaanNya." },
+                { id: 18, topic: 'topic2', qArabic: "سيكف سڤک بوروق دبولیهکن تراوتام اونتوق ممبيلا اومت إسلام دري كظاليمن. اقا که قونچا برلا کو سڤک بوروق؟", qMalay: "Pernyataan: Sikap sangka buruk dibolehkan untuk membela umat. Apakah punca berlaku sangka buruk?", options: { a: "مغيكوت ها وا نفسو", b: "سنتياس بر لافع دادا", c: "سنتیاس منجاک اخلاق", d: "كرف بركاءول دغن علماء" }, ans: "a", exp: "Punca utama sifat buruk sangka sesama manusia adalah kerana menuruti hawa nafsu dan hasutan syaitan." },
+                { id: 19, topic: 'topic2', qArabic: "قونچا منجادي بخيل اياله بيمبغ منجادي دان تيدق كاي.", qMalay: "Punca menjadi bakhil ialah bimbang menjadi... dan tidak kaya.", options: { a: "اخلاص", b: "تواضع", c: "کدکوت", d: "ميسكين" }, ans: "d", exp: "Sifat Bakhil (kedekut) timbul akibat ketakutan melampau terhadap kemiskinan." },
+                { id: 20, topic: 'topic2', qArabic: "عاقبت بخيل منجاد يكن هاتي تيدق تنغ دان سوکر منداقت", qMalay: "Akibat bakhil menjadikan hati tidak tenang dan sukar mendapat...", options: { a: "كبها كياءن", b: "كهيناءن", c: "کچلاروان", d: "كبور وقن" }, ans: "a", exp: "Sifat bakhil menghalang ketenangan dan kebahagiaan hidup di dunia mahupun akhirat." }
             ],
 
-            fillPool: ["قاسر", "إِحْيَاء الموات", "المُخَابَرَة", "فمیلیق هر تا", "هر تا مودل", "بيت المال"],
+            fillPool: ["هاتي", "دوا", "رضا", "تیک", "دعاء", "کافر"],
             fillData: [
-                { id: 21, q: "معاملات یغ تيدق دبنركن دالم إسلام.", ans: "قاسر", exp: "Urusniaga secara paksaan atau kekerasan (tanpa kerelaan) terbatal." },
-                { id: 22, q: "مقصود رأس المال.", ans: "هر تا مودل", exp: "Ra'sul Mal (رأس المال) adalah modal perniagaan dalam Qiradh." },
-                { id: 23, q: "مفهيد و فکن تانه تربيار يغ بلوم دتروكاءي.", ans: "إِحْيَاء الموات", exp: "Menghidupkan tanah mati atau hutan." },
-                { id: 24, q: "تمقت دأعلانكن اللقطة .", ans: "بيت المال", exp: "Barang berharga yang dijumpai jika gagal temui pemilik diserahkan ke Baitulmal." },
-                { id: 25, q: "قمبيايان لقيط يغ تيدق دكتاهوءي.", ans: "بيت المال", exp: "Perbelanjaan (Nafkah) anak pungut jika dia tiada harta diurus oleh Baitulmal." }
+                { id: 21, q: "منريما سسواتو فركا را دغن لاقع دادا اداله فغرتين .", ans: "رضا", exp: "Redha bermaksud menerima ujian dan takdir dengan hati terbuka." },
+                { id: 22, q: "ملاكوكن او قاچارا كأكاماءن بوكن إسلام حكومن", ans: "کافر", exp: "Mempercayai atau menyertai ibadah / upacara penyembahan agama lain menyalahi akidah." },
+                { id: 23, q: "صيفت رضا تربها كي  بهاكين.", ans: "دوا", exp: "Redha terbahagi kepada Redha dengan perintah Allah dan Redha dengan ketentuan/qada' Allah." },
+                { id: 24, q: "قربا یقکن. دان برشکور اونتوق منچاقاي كمانيسن صيفت رضا.", ans: "دعاء", exp: "Banyakkan berdoa dan bersyukur agar dianugerahkan hati yang redha." },
+                { id: 25, q: "سسأورغ يغ برصيفت رضا اکن منداقت کلافغن .", ans: "هاتي", exp: "Sifat redha menjanjikan kelapangan dan ketenangan di dalam hati." }
             ],
 
             shortData: [
-                { id: 26, q: "مكلف اداله شرط باكي حكومن مرتد.", ans: "بَتُول", exp: "Hukuman murtad hanya sah ke atas individu yang berakal dan baligh (Mukallaf)." },
-                { id: 27, q: "مرتد میبیکن کلوارک بهاگیا.", ans: "سَالَه", exp: "Murtad memecahbelahkan institusi keluarga Islam." },
-                { id: 28, q: "حكو من مرتد دبري تيمقوه ماس اونتوق برتوبة.", ans: "بَتُول", exp: "Hukum jenayah syariah, pesalah murtad dipujuk bertaubat dalam tempoh istitabah (biasanya 3 hari)." },
-                { id: 29, q: "هرتا بوليه دواريشي سكيران مرتد.", ans: "سَالَه", exp: "Orang murtad terputus hak mewarisi harta pusaka (Faraid) keluarga Muslim." },
-                { id: 30, q: "اورغ يغ مرتد اكن بردوسا بسر.", ans: "بَتُول", exp: "Kufur / Keluar agama merupakan dosa paling besar dan terbatalnya syahadah." }
+                { id: 26, q: "عجب ایاله فریلا کو ممبغكا كن ديري سنديري.", ans: "بَتُول", exp: "Ujub merupakan perasaan takjub dan membanggakan diri atas kelebihan tersendiri." },
+                { id: 27, q: "عجب تربهاكي كقد تيك بهاكين.", ans: "سَالَه", exp: "Ujub asalnya bukan spesifik kepada 3 bahagian, kebiasaannya ia dilihat dari aspek takbur dan riyak." },
+                { id: 28, q: "صیفت عجب مپیبکن رنده ديري", ans: "سَالَه", exp: "Ujub menghalang sifat rendah diri, malah menggalakkan kesombongan (takbur)." },
+                { id: 29, q: "صيفت عجب بوليه مروسقكن عمل صالح.", ans: "بَتُول", exp: "Sebarang bentuk ujub dan riyak akan menghapuskan pahala ibadah." },
+                { id: 30, q: "راس عجب بوليه دأتسي دغن فراساءن بغك ديري.", ans: "سَالَه", exp: "Bangga diri adalah ejekan ujub, ia hanya boleh diatasi dengan tawaduk." }
             ],
 
-            mindTitle: "بَهَاگِين عِدَّة چَرَاي هِيدُوف",
-            mindPool: ["حَيْض", "تِيدَق حَيْض / فُوتُوس حَيْض", "مَغَانْدُوغ", "بَلُوم دِسَتُوبُوهِي", "مَاتِي سُوَامِي"],
-            mindValid: ["حَيْض", "تِيدَق حَيْض / فُوتُوس حَيْض", "مَغَانْدُوغ", "بَلُوم دِسَتُوبُوهِي"],
+            mindTitle: "جنیس ۲ بخیل",
+            mindPool: ["بَخِيل كَفَدَ الله", "بَخِيل كَفَدَ دِيرِي سَنْدِيرِي", "بَخِيل كَفَدَ مَأْنُسِي", "بَخِيل كَفَدَ حَيْوَان", "بَخِيل هَرْتَا", "بَخِيل عِلْمُ"],
+            mindValid: ["بَخِيل كَفَدَ الله", "بَخِيل كَفَدَ دِيرِي سَنْدِيرِي", "بَخِيل كَفَدَ مَأْنُسِي"],
             
             berstrukturData: [
-                { id: 36, q: "(أ) اقاكه كنجرن باكي فيهق يغ ممبريكن فينجمن ؟<br><br>(ب) سنار ايكن حكمه القراض.", ans: "(أ) مَنْدَافَت فَهَالَا دَان كَرِضَاءَن الله.<br><br>(ب) ١. مَمْبَنْتُو گُولُوغَن مِسْكِين (يَغ تِيَادَ مُودَل).<br>٢. مَغْهِدُوفْكَن اِيكُونُومِي مَشَارَكَت (مَلَالُوي فَرْكُوغْسِيَن).", marks: 6, exp: "Pinjaman sesama Muslim digalakkan untuk bantu-membantu." },
-                { id: 37, q: "(أ) توليس كاتكوري بارغ اللقطة.<br><br>(ب) سنار ايكن جنيس حيوان يع سلامت دري بيناتغ بواس.", ans: "(أ) بَارَغ تَهَن لَامَ، چَفَت رُوسَق، اَتَاو مَمَرْلُوكَن فَرْبَلَنْجَاءَن.<br><br>(ب) ١. اُنْتَا<br>٢. كُودَا", marks: 6, exp: "Haiwan ternakan besar seperti Unta tidak boleh diambil (dikutip) sebagai Luqatah kerana boleh menjaga diri sendiri." },
-                { id: 38, q: "(أ) اقاکه حکوم ظهار ؟<br><br>(ب) توليس دوا ركن ظهار.", ans: "(أ) حَرَام دَان بَرْدُوسَا بَسَر.<br><br>(ب) ١. سُوَامِي (مَلَفَظْكَن).<br>٢. اِيسْتَرِي (دِظِهَاركَن).", marks: 6, exp: "Zihar menzalimi pihak isteri." },
-                { id: 39, q: "(أ) اقاكه توجوان عدة ؟<br><br>(ب) توليس دوا بهاكين عدة.", ans: "(أ) مَمَسْتِيكَن رَحِيم بِيبَس دَرِي كَغَانْدُوغَن.<br><br>(ب) ١. عِدَّة چَرَاي هِيدُوف (طَلَاق).<br>٢. عِدَّة مَاتِي سُوَامِي.", marks: 6, exp: "Menghormati ikatan perkahwinan suci sebelum berkahwin lain." },
-                { id: 40, q: "(أ) اقاکه حکوم قرلو مباءن دان ممانه ؟<br><br>(ب) تولیس حکوم قر لومباءن برايكوت:<br>i. ملاكا كن بيناتغ:<br>ii. قرلو مباءن مليبتكن كصيحتن:", ans: "(أ) سُنَّة دَان دِگَالَاقْكَن (تَنْفَا جُودِي).<br><br>(ب) i. حَرَام (مَثِيقْسَا).<br>ii. سُنَّة / هَارُوس.", marks: 6, exp: "Islam melarang sebarang acara sukan yang menganiaya makhluk." }
+                { id: 36, q: "(أ) اقا که فونچا برلا کون کروسقن عالم سكیتر سباکایمان دپا تاکن دالم القرءان؟<br><br>(ب) تولیس چونتوه قربواتن ماء نسي يغ ميببکن کروسقن عالم سکیتر.", ans: "(أ) دِسَبَبْكَن أُولِيه تَغَن-تَغَن (فَرْبُوَاتَن) مَأْنُسِي سَنْدِيرِي.<br><br>(ب) ١. فَمْبُوَاعَن سَامْفَه مَرَاتَ-رَاتَ.<br>٢. فَنَبَاعَن فُوكُوق سَچَارَا حَرَام.", marks: 6, exp: "Tangan manusia sendiri menjadi punca kerosakan (Al-Fasad) di muka bumi melalui pencemaran." },
+                { id: 37, q: "(أ) اقاکه تندا کیت منجينتاءي تانه اءير؟<br><br>(ب) تولیس دوا چارا منيفكتكن راس چینتا کفد نکارا.", ans: "(أ) سَغْگُوف بَرْقُرْبَان هَرْتَا دَان پَاوَا دَمِي مَمْفَرْتَاهَنْكَنَّ.<br><br>(ب) ١. مَمَاتُوهِي أُونْدَغ-أُونْدَغ نَگَارَا.<br>٢. مَغْحُرْمَتِي فَمِيمْفِين دَان بُودَايَا نَگَارَا.", marks: 6, exp: "Patriotisme adalah sebahagian ajaran agama untuk menjaga kedaulatan tanah air." },
+                { id: 38, q: "(أ) افاكه لاون باكي صيفت رياء؟<br><br>(ب) توليس فكتوريع ممبنتوق صيفت تواضع.", ans: "(أ) الإِخْلَاصُ (Ikhlas).<br><br>(ب) ١. مَغَتَاهُوءِي دَان مَثَدَارِي كَلَمَاهَن دِيرِي سَنْدِيرِي كَفَدَ الله.<br>٢. مَثَايَغِي دَان مَغْحُرْمَتِي أُورَغ لَاءِين (تِيدَق سُومْبُوغ).", marks: 6, exp: "Tawaduk hanya akan terbina apabila individu membuang rasa ego (takbur) dari hatinya." },
+                { id: 39, q: "(أ) افاكه كأيستيميواءن ماء نسي بربنديغ مخلوق ٢ لاءين؟<br><br>(ب) توليس دوا فوكوس تفكر دالم القرءان.", ans: "(أ) مَأْنُسِي دِكُرْنِيَاكَن عَقْل فِيكِيرَان.<br><br>(ب) ١. مَمِيكِيرْكَن كَبَسَارَن دَان كَكُوَاسَاءَن كَجَادِيَن الله.<br>٢. مَمِيكِيرْكَن كَجَادِيَن دِيرِي سَنْدِيرِي دَان أُومَت تَرْدَاهُولُو.", marks: 6, exp: "Berfikir (Tafakkur) pada ciptaan langit dan bumi menundukkan hati manusia kepada Allah." },
+                { id: 40, q: "(أ) اقاکه عاقبت بوروق سڅک؟<br><br>(ب) تولیس چارا ۲ مغيلق سڤک بوروق.", ans: "(أ) مَمُوتُوسْكَن صِلَةُ الرَّحِيم دَان مَمْبَاوَا كَفَدَ فَرْگَادُوهَن.<br><br>(ب) ١. سَنْتِيَاسَ بَرْسَغْكَ بَائِيق (حُسْنُ الظَّن).<br>٢. مَثِيَاسَت أَتَاو مَنْچَارِي كَبَنَارَن سَسُوَاتُو بِرِيتَا (تَبَيُّن) سَبَلُوم مَثَالَاهْكَن.", marks: 6, exp: "Su'uzan adalah penyakit hati yang merosakkan ukhuwah sesama Muslim." }
             ]
         };
 
-        // --- STREAMING_CHUNK:App Bootstrapping ---
+        // --- STREAMING_CHUNK:App Initialization & Events... ---
         document.addEventListener('DOMContentLoaded', () => {
             initApp();
         });
@@ -331,7 +332,6 @@
             renderCharts();
         }
 
-        // --- STREAMING_CHUNK:Mode Switcher Logic ---
         function switchAppMode(mode) {
             currentMode = mode;
             const btnSkema = document.getElementById('btn-mode-skema');
@@ -343,7 +343,7 @@
                 btnKuiz.className = 'px-3.5 py-1.5 rounded-md transition-all text-white/80 hover:text-white';
                 kpiText.innerText = 'SKEMA';
             } else {
-                btnKuiz.className = 'px-3.5 py-1.5 rounded-md transition-all shadow-sm bg-indigo-500 text-white font-semibold';
+                btnKuiz.className = 'px-3.5 py-1.5 rounded-md transition-all shadow-sm bg-rose-500 text-white font-semibold';
                 btnSkema.className = 'px-3.5 py-1.5 rounded-md transition-all text-white/80 hover:text-white';
                 kpiText.innerText = 'KUIZ UJIAN';
             }
@@ -351,7 +351,6 @@
             renderObjektifQuestions();
         }
 
-        // --- STREAMING_CHUNK:Section Navigation Logic ---
         function showSection(secId) {
             const sections = ['dashboard', 'objektif', 'isitempat', 'betulsalah', 'petaminda', 'berstruktur'];
             sections.forEach(s => {
@@ -368,7 +367,7 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // --- STREAMING_CHUNK:Objective Questions Renderer ---
+        // --- STREAMING_CHUNK:Component Renderers... ---
         function renderObjektifQuestions() {
             const container = document.getElementById('objektif-questions-container');
             container.innerHTML = '';
@@ -383,9 +382,9 @@
                     if (currentMode === 'skema') {
                         const isCorrect = opt === q.ans;
                         optionsHtml += `
-                            <div class="p-3 rounded-lg border text-sm flex flex-col gap-1 ${isCorrect ? 'bg-indigo-50 border-indigo-400 font-bold text-indigo-900 shadow-sm' : 'bg-slate-50 border-slate-200 text-slate-600'}">
+                            <div class="p-3 rounded-lg border text-sm flex flex-col gap-1 ${isCorrect ? 'bg-rose-50 border-rose-400 font-bold text-rose-900 shadow-sm' : 'bg-slate-50 border-slate-200 text-slate-600'}">
                                 <span class="font-jawi text-xl text-right">${optText}</span>
-                                <span class="text-xs font-sans text-left ${isCorrect ? 'text-indigo-700' : 'text-slate-400'}">(${opt.toUpperCase()})</span>
+                                <span class="text-xs font-sans text-left ${isCorrect ? 'text-rose-700' : 'text-slate-400'}">(${opt.toUpperCase()})</span>
                             </div>
                         `;
                     } else {
@@ -414,7 +413,7 @@
                         <div class="grid grid-cols-2 gap-3 mb-4">${optionsHtml}</div>
                     </div>
                     <div class="pt-4 border-t border-slate-100 text-xs text-slate-600 bg-slate-50/70 -mx-5 -mb-5 p-4 rounded-b-xl">
-                        <span class="font-bold text-indigo-700 block mb-1">💡 Huraian Skema:</span>
+                        <span class="font-bold text-rose-700 block mb-1">💡 Huraian Skema:</span>
                         <p class="leading-relaxed text-slate-600">${q.exp}</p>
                     </div>
                 `;
@@ -422,7 +421,6 @@
             });
         }
 
-        // --- STREAMING_CHUNK:Quiz Selection Handling ---
         function handleQuizAnswer(qKey, selectedOpt, correctOpt) {
             if (currentMode === 'skema') return;
             userQuizAnswers[qKey] = selectedOpt;
@@ -438,7 +436,6 @@
             document.getElementById('kpi-score-set1').innerText = `${correctCount} / 20`;
         }
 
-        // --- STREAMING_CHUNK:Fill Blanks Renderer ---
         function renderFillBlanks() {
             const pool = document.getElementById('fill-blanks-pool');
             pool.innerHTML = '';
@@ -457,7 +454,7 @@
                                 <h3 class="font-jawi text-2xl font-bold text-slate-900 text-right leading-loose">${q.q}</h3>
                             </div>
                             <div class="text-right whitespace-nowrap mt-2 sm:mt-0">
-                                <span class="inline-block bg-indigo-100 border border-indigo-300 text-indigo-900 font-jawi text-2xl font-bold px-6 py-2 rounded-xl shadow-sm">
+                                <span class="inline-block bg-rose-100 border border-rose-300 text-rose-900 font-jawi text-2xl font-bold px-6 py-2 rounded-xl shadow-sm">
                                     ${q.ans}
                                 </span>
                             </div>
@@ -471,7 +468,6 @@
             });
         }
 
-        // --- STREAMING_CHUNK:True False Renderer ---
         function renderShortAnswer() {
             const container = document.getElementById('short-answer-container');
             container.innerHTML = '';
@@ -495,7 +491,6 @@
             });
         }
 
-        // --- STREAMING_CHUNK:Mind Map Renderer ---
         function renderMindMap() {
             document.getElementById('mindmap-center-title').innerText = activeData.mindTitle;
 
@@ -514,14 +509,13 @@
             activeData.mindValid.forEach((ans, idx) => {
                 nodesContainer.innerHTML += `
                     <div class="rounded-xl border-2 border-slate-200 bg-white p-5 text-center shadow-sm flex flex-col items-center justify-center min-h-[120px]">
-                        <span class="text-[10px] uppercase font-bold text-slate-400 block mb-2 tracking-widest">Syarat ${idx + 1}</span>
-                        <div class="font-jawi text-3xl font-bold text-indigo-700">${ans}</div>
+                        <span class="text-[10px] uppercase font-bold text-slate-400 block mb-2 tracking-widest">Ruang ${idx + 1}</span>
+                        <div class="font-jawi text-3xl font-bold text-sys-800">${ans}</div>
                     </div>
                 `;
             });
         }
 
-        // --- STREAMING_CHUNK:Structured Questions Renderer ---
         function renderBerstruktur() {
             const container = document.getElementById('berstruktur-container');
             container.innerHTML = '';
@@ -537,9 +531,9 @@
                             <h3 class="font-jawi text-2xl font-bold text-slate-900 text-right leading-loose">${q.q}</h3>
                         </div>
 
-                        <div class="bg-indigo-50/50 p-5 rounded-xl border border-indigo-100 text-right relative overflow-hidden">
-                            <div class="absolute left-0 top-0 bottom-0 w-1 bg-indigo-400"></div>
-                            <span class="text-[10px] text-indigo-600 font-bold block font-sans mb-3 tracking-widest uppercase text-left">Skema Jawapan Rasmi:</span>
+                        <div class="bg-rose-50/50 p-5 rounded-xl border border-rose-100 text-right relative overflow-hidden">
+                            <div class="absolute left-0 top-0 bottom-0 w-1 bg-rose-400"></div>
+                            <span class="text-[10px] text-rose-600 font-bold block font-sans mb-3 tracking-widest uppercase text-left">Skema Jawapan Rasmi:</span>
                             <p class="font-jawi text-2xl font-bold text-sys-900 leading-loose">${q.ans}</p>
                         </div>
                         
@@ -551,7 +545,6 @@
             });
         }
 
-        // --- STREAMING_CHUNK:Chart Generation Logic ---
         function renderCharts() {
             const marksCtx = document.getElementById('marksChart').getContext('2d');
             const topicsCtx = document.getElementById('topicsChart').getContext('2d');
@@ -565,7 +558,7 @@
                     labels: ['Objektif (40m)', 'Bahagian Ba (60m)'],
                     datasets: [{
                         data: [40, 60],
-                        backgroundColor: ['#4f46e5', '#818cf8'],
+                        backgroundColor: ['#be123c', '#fb7185'],
                         borderWidth: 2, 
                         borderColor: '#ffffff'
                     }]
@@ -586,7 +579,7 @@
                     datasets: [{
                         label: 'Bilangan Soalan',
                         data: [activeData.stats.t1, activeData.stats.t2],
-                        backgroundColor: ['#4f46e5', '#312e81'],
+                        backgroundColor: ['#be123c', '#9f1239'],
                         borderRadius: 6,
                         barPercentage: 0.5
                     }]
