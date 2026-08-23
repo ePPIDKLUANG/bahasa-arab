@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Interaktif SDEA 2025 - Tajwid (DE 207)</title>
+    <title>Portal Percubaan SDEA 2025 - Tauhid (DE 102)</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,10 +22,10 @@
                 extend: {
                     colors: {
                         sys: {
-                            900: '#1e3a8a', // Deep Blue
-                            800: '#1e40af',
-                            700: '#1d4ed8',
-                            accent: '#3b82f6',
+                            900: '#1e1b4b', // Deep Indigo for Percubaan theme
+                            800: '#312e81',
+                            700: '#4338ca',
+                            accent: '#6366f1',
                         }
                     },
                     fontFamily: {
@@ -69,20 +69,20 @@
                 
                 <!-- Logo & Title -->
                 <div class="flex items-center gap-3 w-full sm:w-auto">
-                    <div id="header-logo-bg" class="w-10 h-10 rounded-lg bg-blue-800 border border-blue-600 flex items-center justify-center font-bold text-xl shadow-inner font-jawi text-sys-accent transition-colors duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-800 border border-indigo-600 flex items-center justify-center font-bold text-xl shadow-inner font-jawi text-indigo-300">
                         ت
                     </div>
                     <div>
                         <h1 class="text-base font-bold leading-tight">Portal SDEA 2025 (Pusat Peperiksaan)</h1>
-                        <p id="header-subtitle" class="text-[10px] text-blue-200 uppercase tracking-widest">Kertas Aktif: Tajwid (DE 207)</p>
+                        <p class="text-[10px] text-indigo-300 uppercase tracking-widest">Kertas Percubaan: Tauhid (DE 102)</p>
                     </div>
                 </div>
 
-                <!-- Global Controls (Mode Switcher) -->
+                <!-- Global Controls -->
                 <div class="flex flex-wrap items-center gap-3 w-full sm:w-auto justify-end">
                     <div class="bg-black/20 p-1 rounded-lg border border-white/10 flex items-center text-xs font-medium">
                         <button id="btn-mode-skema" onclick="switchAppMode('skema')" class="px-3.5 py-1.5 rounded-md transition-all shadow-sm bg-white text-slate-900 font-semibold">
-                            Skema Jawapan
+                            Skema
                         </button>
                         <button id="btn-mode-kuiz" onclick="switchAppMode('kuiz')" class="px-3.5 py-1.5 rounded-md transition-all text-white/80 hover:text-white">
                             Mod Ujian
@@ -92,8 +92,9 @@
             </div>
         </div>
 
+        <!-- Section Navigation Tabs -->
         <div class="bg-white text-slate-700 border-b border-stone-200 overflow-x-auto custom-scrollbar">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 flex gap-2 py-2 text-xs sm:text-sm font-medium whitespace-nowrap" id="nav-tabs-container">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 flex gap-2 py-2 text-xs sm:text-sm font-medium whitespace-nowrap">
                 <button onclick="showSection('dashboard')" id="tab-dashboard" class="tab-btn px-4 py-2 rounded-lg transition-colors tab-active">
                     📊 Dashboard
                 </button>
@@ -110,7 +111,7 @@
                     Peta Minda (31-35)
                 </button>
                 <button onclick="showSection('berstruktur')" id="tab-berstruktur" class="tab-btn px-4 py-2 rounded-lg hover:bg-slate-50 transition-colors">
-                    Soalan Struktur (36-40)
+                    Berstruktur (36-40)
                 </button>
             </div>
         </div>
@@ -119,17 +120,17 @@
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
 
         <section id="sec-dashboard" class="space-y-6 block">
-            <div id="dashboard-banner" class="rounded-2xl p-6 sm:p-8 text-white shadow-md relative overflow-hidden transition-colors duration-500 bg-sys-800">
+            <div class="rounded-2xl p-6 sm:p-8 text-white shadow-md relative overflow-hidden transition-colors duration-500 bg-sys-800">
                 <div class="relative z-10 max-w-3xl">
-                    <span id="banner-badge" class="inline-block px-3 py-1 bg-white/25 text-white text-xs font-semibold rounded-full mb-3 uppercase tracking-wider backdrop-blur-sm">
-                        Modul Aktif: TAJWID (SEBENAR)
+                    <span class="inline-block px-3 py-1 bg-white/25 text-white text-xs font-semibold rounded-full mb-3 uppercase tracking-wider backdrop-blur-sm">
+                        Modul Aktif: TAUHID (PERCUBAAN)
                     </span>
-                    <h2 id="banner-title" class="text-2xl sm:text-3xl font-bold mb-2">Peperiksaan Sijil Darjah Enam Agama (SDEA) 2025</h2>
-                    <p id="banner-desc" class="text-blue-100 text-sm sm:text-base leading-relaxed">
-                        Anda sedang melayari modul rasmi SDEA 2025 bagi subjek Tajwid (DE 207). Sila beralih tab di atas untuk menyemak skema atau menjawab soalan.
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-2">Peperiksaan Percubaan SDEA 2025</h2>
+                    <p class="text-indigo-100 text-sm sm:text-base leading-relaxed">
+                        Anda sedang melayari modul Percubaan SDEA 2025 bagi subjek Tauhid. Sila beralih tab di atas untuk mula menyemak jawapan atau menjawab soalan.
                     </p>
                 </div>
-                <div id="banner-bg-icon" class="absolute -right-6 -bottom-10 opacity-10 font-jawi text-[180px] pointer-events-none select-none">
+                <div class="absolute -right-6 -bottom-10 opacity-10 font-jawi text-[180px] pointer-events-none select-none">
                     ت
                 </div>
             </div>
@@ -138,8 +139,8 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="bg-white p-5 rounded-xl border border-stone-200 shadow-sm">
                     <p class="text-xs text-slate-500 font-medium">Subjek Pilihan</p>
-                    <p id="kpi-subject-text" class="text-lg sm:text-xl font-bold text-sys-900 mt-1 uppercase">TAJWID</p>
-                    <span class="text-[10px] text-slate-400 mt-1 inline-block">Kertas Kod DE 207</span>
+                    <p class="text-lg sm:text-xl font-bold text-sys-900 mt-1 uppercase">TAUHID</p>
+                    <span class="text-[10px] text-slate-400 mt-1 inline-block">Kertas Kod DE 102</span>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-stone-200 shadow-sm">
                     <p class="text-xs text-slate-500 font-medium">Status Mod</p>
@@ -147,14 +148,14 @@
                     <span class="text-[10px] text-slate-400 mt-1 inline-block">Boleh ditukar ke Mod Ujian</span>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-stone-200 shadow-sm">
-                    <p class="text-xs text-slate-500 font-medium">Jumlah Markah Penuh</p>
+                    <p class="text-xs text-slate-500 font-medium">Markah Penuh</p>
                     <p class="text-xl sm:text-2xl font-bold text-slate-900 mt-1">100 Markah</p>
                     <span class="text-[10px] text-slate-400 mt-1 inline-block">Alif (40m) & Ba (60m)</span>
                 </div>
-                <div id="kpi-score-card" class="bg-blue-50 border border-blue-200 p-5 rounded-xl shadow-sm transition-colors">
-                    <p id="kpi-score-title" class="text-xs text-blue-800 font-bold mb-1">Skor Kuiz Objektif</p>
-                    <p id="kpi-score-set1" class="text-2xl sm:text-3xl font-bold text-blue-600">0 / 20</p>
-                    <span class="text-[10px] text-blue-800/70">Jawab di Bahagian Alif</span>
+                <div class="bg-indigo-50 border border-indigo-200 p-5 rounded-xl shadow-sm">
+                    <p class="text-xs text-indigo-800 font-bold mb-1">Skor Kuiz Objektif</p>
+                    <p id="kpi-score-set1" class="text-2xl sm:text-3xl font-bold text-indigo-600">0 / 20</p>
+                    <span class="text-[10px] text-indigo-800/70">Jawab di Bahagian Alif</span>
                 </div>
             </div>
 
@@ -162,15 +163,15 @@
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-white p-5 rounded-xl border border-stone-200 shadow-sm">
                     <div>
-                        <h3 class="text-base font-bold text-slate-900 mb-1">Pecahan Markah Peperiksaan</h3>
-                        <p class="text-xs text-slate-500 mb-4">Struktur format kertas peperiksaan Tajwid (DE 207).</p>
+                        <h3 class="text-base font-bold text-slate-900 mb-1">Pecahan Markah Kertas DE 102</h3>
+                        <p class="text-xs text-slate-500 mb-4">Struktur format markah peperiksaan per bahagian.</p>
                     </div>
                     <div class="chart-container"><canvas id="marksChart"></canvas></div>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-stone-200 shadow-sm">
                     <div>
-                        <h3 id="chart-topic-title" class="text-base font-bold text-slate-900 mb-1">Taburan Topik (Objektif)</h3>
-                        <p class="text-xs text-slate-500 mb-4">Komposisi taburan 20 soalan bahagian Alif.</p>
+                        <h3 class="text-base font-bold text-slate-900 mb-1">Taburan Topik (Objektif)</h3>
+                        <p class="text-xs text-slate-500 mb-4">Komposisi 20 soalan objektif Percubaan.</p>
                     </div>
                     <div class="chart-container"><canvas id="topicsChart"></canvas></div>
                 </div>
@@ -179,13 +180,9 @@
 
         <section id="sec-objektif" class="space-y-6 hidden">
             <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                    <div>
-                        <span id="objektif-subtitle" class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bahagian Alif (40 Markah)</span>
-                        <h2 class="text-xl font-bold text-slate-900 mt-0.5">Soalan Objektif (1 - 20)</h2>
-                        <p class="text-xs text-slate-500 mt-1">Setiap soalan membawa 2 markah.</p>
-                    </div>
-                </div>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bahagian Alif (40 Markah)</span>
+                <h2 class="text-xl font-bold text-slate-900 mt-0.5">Soalan Objektif (1 - 20)</h2>
+                <p class="text-xs text-slate-500 mt-1">Bulatkan jawapan yang betul berpandukan pilihan yang diberi.</p>
             </div>
             <div id="objektif-questions-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <!-- Populated via JS -->
@@ -194,12 +191,12 @@
 
         <section id="sec-isitempat" class="space-y-6 hidden">
             <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
-                <span id="fill-section-label" class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bahagian Ba (10 Markah)</span>
-                <h2 id="fill-section-title" class="text-xl font-bold text-slate-900 mt-0.5">Isi Tempat Kosong (21 - 25)</h2>
-                <p id="fill-section-desc" class="text-xs text-slate-500 mt-1">Isi tempat kosong berpandukan pilihan yang disediakan.</p>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bahagian Ba (10 Markah)</span>
+                <h2 class="text-xl font-bold text-slate-900 mt-0.5">Isi Tempat Kosong (21 - 25)</h2>
+                <p class="text-xs text-slate-500 mt-1">Isi tempat kosong berpandukan pilihan jawapan yang disediakan.</p>
             </div>
             
-            <div id="fill-pool-box" class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center shadow-inner">
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center shadow-inner">
                 <p class="text-sm font-bold text-slate-600 mb-4 uppercase tracking-wider">Pilihan Jawapan:</p>
                 <div id="fill-blanks-pool" class="flex flex-wrap justify-center gap-4 font-jawi text-xl font-bold text-sys-800"></div>
             </div>
@@ -210,8 +207,8 @@
         <section id="sec-padanan" class="space-y-6 hidden">
             <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
                 <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bahagian Ba (10 Markah)</span>
-                <h2 class="text-xl font-bold text-slate-900 mt-0.5">Padanan (26 - 30)</h2>
-                <p class="text-xs text-slate-500 mt-1">Padankan huruf Ra' yang dibaca Tafkhim (tebal) atau Tarqiq (nipis).</p>
+                <h2 class="text-xl font-bold text-slate-900 mt-0.5">Padankan Jawapan (26 - 30)</h2>
+                <p class="text-xs text-slate-500 mt-1">Padankan kenyataan dengan padanan (bilangan) yang betul.</p>
             </div>
             <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
                 <div id="padanan-container" class="space-y-4"></div>
@@ -220,21 +217,21 @@
 
         <section id="sec-petaminda" class="space-y-6 hidden">
             <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
-                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bahagian Ba (Peta Minda) (10 Markah)</span>
-                <h2 id="mindmap-heading" class="text-xl font-bold text-slate-900 mt-0.5">Lengkapkan Peta Minda (31 - 35)</h2>
-                <p class="text-xs text-slate-500 mt-1">Isikan huruf-huruf Qawiyyah (حروف قَوِيَّة).</p>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bahagian Ba (10 Markah)</span>
+                <h2 class="text-xl font-bold text-slate-900 mt-0.5">Lengkapkan Peta Minda (31 - 35)</h2>
+                <p class="text-xs text-slate-500 mt-1">Isikan ruang kosong pada peta minda.</p>
             </div>
 
             <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-6">
                 <div>
-                    <h3 class="text-xs font-bold text-slate-500 uppercase mb-3 text-center">Senarai Pilihan Huruf:</h3>
+                    <h3 class="text-xs font-bold text-slate-500 uppercase mb-3 text-center">Senarai Pilihan Jawapan:</h3>
                     <div id="mindmap-pool" class="flex flex-wrap gap-3 justify-center"></div>
                 </div>
 
                 <div class="pt-6 border-t border-slate-100 relative">
-                    <div class="text-center mb-8">
+                    <div class="text-center mb-10">
                         <div id="mindmap-center-title" class="inline-block bg-sys-800 text-white font-jawi text-3xl sm:text-4xl font-bold px-10 py-4 rounded-2xl shadow-md border-b-4 border-sys-900 relative z-10 transition-colors">
-                            حروف قَوِيَّة
+                            عنوان رئيسي
                         </div>
                     </div>
                     <div id="mindmap-nodes" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 relative z-10"></div>
@@ -245,8 +242,8 @@
         <section id="sec-berstruktur" class="space-y-6 hidden">
             <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
                 <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bahagian Ba (30 Markah)</span>
-                <h2 id="structured-heading" class="text-xl font-bold text-slate-900 mt-0.5">Soalan Berstruktur (36 - 40)</h2>
-                <p class="text-xs text-slate-500 mt-1">Jawab semua soalan berikut berdasarkan pemahaman ilmu Tajwid.</p>
+                <h2 class="text-xl font-bold text-slate-900 mt-0.5">Soalan Berstruktur (36 - 40)</h2>
+                <p class="text-xs text-slate-500 mt-1">Jawab semua soalan berikut berdasarkan format markah.</p>
             </div>
 
             <div id="berstruktur-container" class="space-y-6"></div>
@@ -255,60 +252,62 @@
     </main>
 
     <script>
-        let currentMode = 'skema';
+        let currentMode = 'skema';     
         let userQuizAnswers = {};
         let chartsInstance = { marks: null, topics: null };
 
+        // MASTER DATABASE (PERCUBAAN TAUHID 2025)
         const activeData = {
-            title: "Set Sebenar Tajwid 2025 (DE 207)",
-            stats: { t1: 10, t2: 10 },
-            statLabels: ["Sifat Huruf & Idgham", "Waqaf & Ibtida'"],
             objektif: [
-                { id: 1, topic: 'Sifat Huruf', qArabic: "افاكه فغرتين حروف أَقْوَى؟", qMalay: "Apakah pengertian huruf Aqwā?", options: { a: "لمه", b: "قاليغ قوات", c: "لمبوت", d: "سدرهان" }, ans: "b", exp: "Aqwā bermaksud paling kuat. Huruf yang sifat kuatnya lebih banyak dari sifat lemah." },
-                { id: 2, topic: 'Sifat Huruf', qArabic: "مقصود _____ اياله حروف يغ سدرهان.", qMalay: "Maksud _____ ialah huruf yang sederhana.", options: { a: "أَضْعَفْ", b: "قَوِيَّة", c: "متوسطة", d: "ضَعِيفَة" }, ans: "c", exp: "Mutawassitah bermaksud sederhana, di mana sifat kuat dan lemahnya seimbang." },
-                { id: 3, topic: 'Sifat Huruf', qArabic: "حروف يغ ساعت لمه اداله مقصود .", qMalay: "Huruf yang sangat lemah adalah maksud bagi...", options: { a: "أَقْوَى", b: "قَوِيَّة", c: "أَضْعَفْ", d: "ضَعِيفَة" }, ans: "c", exp: "Adh'af bermaksud sangat lemah (paling lemah)." },
-                { id: 4, topic: 'Idgham', qArabic: "برافا كه بهاكين ادغام؟", qMalay: "Berapakah bahagian idgham?", options: { a: "دوا", b: "تیک", c: "امقت", d: "ليم" }, ans: "b", exp: "Idgham terbahagi kepada 3 iaitu Mutamathilain, Mutaqaribain dan Mutajanisain." },
-                { id: 5, topic: 'Idgham', qArabic: "ادغام _____ تر ما سوق ددالم بها كين ادغام صغير.", qMalay: "Idgham _____ termasuk di dalam bahagian idgham saghir.", options: { a: "كبير", b: "مثلين", c: "غير كبير", d: "قصير" }, ans: "b", exp: "Idgham Mithlain Saghir adalah apabila huruf pertama mati dan kedua berbaris." },
-                { id: 6, topic: 'Idgham', qArabic: "مانا که انتارا برایکوت سبب تيدق برلا کو ادغام مثلين؟<br>i. با چاءن ادغام<br>ii. برتمو حروف لام<br>iii. باچاءن سكتة<br>iv. حروف قرتام اداله حروف مد", qMalay: "Manakah antara berikut sebab tidak berlaku idgham mithlain?", options: { a: "i دان ii", b: "i دان iii", c: "ii دان iii", d: "iii دان iv" }, ans: "d", exp: "Idgham mithlain terbatal jika membaca dengan saktah (iii) atau huruf pertama adalah huruf mad (iv)." },
-                { id: 7, topic: 'Tafkhim Tarqiq', qArabic: "اقاکه ایستيله باكي كلمة \" الله \"؟", qMalay: "Apakah istilah bagi kalimah 'Allah'?", options: { a: "بلى", b: "نَعَمْ", c: "لفظ الجلالة", d: "لفظ الضلالة" }, ans: "c", exp: "Kalimah Allah disebut sebagai Lafzul Jalalah." },
-                { id: 8, topic: 'Tafkhim Tarqiq', qArabic: "حروف راء يع دباج تبل اداله راء برباريس اتس اتاو .", qMalay: "Huruf Ra' yang dibaca tebal (tafkhim) adalah ra' berbaris atas atau...", options: { a: "باوه", b: "شده", c: "سكون", d: "هادفن" }, ans: "d", exp: "Ra' dibaca tebal jika ia berbaris fathah (atas) atau dhommah (hadapan)." },
-                { id: 9, topic: 'Tafkhim Tarqiq', qArabic: "وَرِزْقٌ كَرِيمٌ<br>افاكه سبب حروف \"راء\" قد كلمة \" وَرِزْقٌ \" دباج نيفيس؟", qMalay: "Apakah sebab huruf 'ra'' pada kalimah 'wa rizqun' dibaca nipis (tarqiq)?", options: { a: "برباريس اتس", b: "برباريس باوه", c: "برباريس سكون", d: "برباريس هادفن" }, ans: "b", exp: "Ra' dibaca nipis (tarqiq) kerana ia berbaris kasrah (bawah)." },
-                { id: 10, topic: 'Hamzah', qArabic: "همزة وصل اياله تندا _____ حروف صاد (ص).", qMalay: "Hamzah wasal ialah tanda _____ huruf sod (ص).", options: { a: "ایکور", b: "كفالا", c: "بنتوق", d: "بادن" }, ans: "b", exp: "Tanda hamzah wasal adalah menyerupai kepala huruf Sod (ص) kecil di atas alif." },
-                { id: 11, topic: 'Hamzah', qArabic: "برايکوت ایاله چونتوه آیات همزة وصل کچوالي", qMalay: "Berikut ialah contoh ayat hamzah wasal KECUALI...", options: { a: "إِلَى رَبِّكُمْ", b: "أشددبه", c: "اقْتُلُوا يُوسُفَ", d: "فَقَالُوا ابْنُوا" }, ans: "a", exp: "إِلَى (Ila) menggunakan hamzah qata' (hamzah kekal), bukan hamzah wasal." },
-                { id: 12, topic: 'Hamzah', qArabic: "اقاكه فغرتين همزة قطع ؟", qMalay: "Apakah pengertian hamzah qata'?", options: { a: "تتف با چاء نن", b: "براو به با چاء نن", c: "دهنتیکن با چاء نن", d: "دمولا کن با چاء نن" }, ans: "a", exp: "Hamzah Qata' adalah hamzah yang tetap sebutannya sama ada di awal, tengah atau bersambung bacaan." },
-                { id: 13, topic: 'Hukum Khusus', qArabic: "منوكر كن همزة ماتي كقد سبوتن ياء اداله فغرتين _____.", qMalay: "Menukarkan hamzah mati kepada sebutan ya' adalah pengertian...", options: { a: "وقف", b: "تسهيل", c: "ابتداء", d: "إبدال" }, ans: "d", exp: "Ibdal bermaksud menukar, seperti menukar hamzah mati kepada huruf mad." },
-                { id: 14, topic: 'Waqaf', qArabic: "وقف يع دلا كوكن كران ترفقسا اداله .", qMalay: "Waqaf yang dilakukan kerana terpaksa (seperti putus nafas/batuk) adalah...", options: { a: "وقف اختياري", b: "وقف اختباري", c: "وقف اضطراري", d: "وقف انتظاري" }, ans: "c", exp: "Waqaf Idhtirari (اضطراري) ialah waqaf kerana dharurat/terpaksa." },
-                { id: 15, topic: 'Waqaf', qArabic: "مانا که تندا وقف ددالم القرءان؟<br>i. قلى<br>ii. لا<br>iii. ب<br>iv. صلى", qMalay: "Manakah tanda waqaf di dalam Al-Quran?", options: { a: "i دان ii", b: "ii دان iii", c: "i دان iv", d: "iii دان iv" }, ans: "c", exp: "قلى (Qila - lebih utama waqaf) dan صلى (Sila - lebih utama wasal) adalah tanda waqaf. 'لا' bermaksud jangan waqaf." },
-                { id: 16, topic: 'Waqaf', qArabic: "اقاکه حکوم برهنتي قد وقف جبريل؟", qMalay: "Apakah hukum berhenti pada Waqaf Jibril?", options: { a: "سنة", b: "هاروس", c: "واجب", d: "مكروه" }, ans: "a", exp: "Hukum berhenti pada Waqaf Jibril (tempat Malaikat Jibril berhenti ketika mengajar Nabi) adalah Sunat (sunat ittiba')." },
-                { id: 17, topic: 'Waqaf', qArabic: "تر داقت سقولوه تمقت وقف _____ ددالم القرءان.", qMalay: "Terdapat sepuluh tempat waqaf _____ di dalam Al-Quran.", options: { a: "تَعَانُق", b: "مُرَاقَبَة", c: "اختياري", d: "جبريل" }, ans: "d", exp: "Dinyatakan terdapat 10 tempat khusus yang dipanggil Waqaf Jibril dalam Al-Quran." },
-                { id: 18, topic: 'Waqaf', qArabic: "انتارا برایکوت اداله کپاتاون بركاءيتن وقف لازم كجوالي", qMalay: "Antara berikut adalah kenyataan berkaitan Waqaf Lazim KECUALI...", options: { a: "تندا میم کچیل (م)", b: "دنا ماكن وقف واجب", c: "عملن اتاو قربواتن نبي", d: "دتونتوت برهنتي کتيک ممباچ" }, ans: "c", exp: "Waqaf Lazim ditanda dengan mim kecil, dituntut berhenti (wajib), tetapi ia bukan dinamakan atas sunnah perbuatan nabi khusus (seperti waqaf jibril)." },
-                { id: 19, topic: 'Waqaf', qArabic: "حكوم وقف قد كلمة \" نعم \" قد ايات \" قَالُوا نَعم \" اداله ها روس .", qMalay: "Hukum waqaf pada kalimah 'Na'am' pada ayat 'Qalu Na'am' adalah harus...", options: { a: "مولا", b: "برهنتي", c: "سامبوغ", d: "ممباچان" }, ans: "b", exp: "Pada lafaz jawapan seperti 'Na'am', diharuskan waqaf (berhenti) padanya." },
-                { id: 20, topic: 'Waqaf', qArabic: "ها روس دباچ کتیک برهنتي دغن دوا چارا ياءيت مد اصلي دان مد عارض للسكون.<br>بردا سر کن کپاتاءن دأتس، ماناكه كلمة يع دباج دغن قاعده ترسبوت؟", qMalay: "Harus dibaca ketika berhenti dengan dua cara iaitu Mad Asli dan Mad Aridh Lissukun. Manakah kalimah tersebut?", options: { a: "ضَعْفِ", b: "فَمَاءَ اتنة", c: "سَلسَلاً", d: "سَلَسِلْ" }, ans: "c", exp: "Kalimah سَلَاسِلَا (Salasila) dalam surah Al-Insan boleh diwaqafkan dengan dua cara: kekalkan mad asli (Salasila) atau sukunkan lam (Salasil)." }
+                { id: 1, topic: 'Uluhiyyah', qArabic: "اقاكه فغرتين الألوهية قد بهاس؟", qMalay: "Apakah pengertian Al-Uluhiyyah pada bahasa?", options: { a: "کرسولن", b: "کتوهنن", c: "كأكوغن", d: "كنبين" }, ans: "b", exp: "Al-Uluhiyyah berasal dari kata 'Ilah' yang membawa maksud Ketuhanan dari segi bahasa." },
+                { id: 2, topic: 'Uluhiyyah', qArabic: "برافا كه صيفت يغ تركاندوغ ددالم إِسْتِغْنَاءُ اللَّهِ عَنْ كُلِّ مَا سِوَاهُ؟", qMalay: "Berapakah sifat yang terkandung di dalam Istighna'ullah 'an kulli ma siwahu?", options: { a: "سمبيلن", b: "سبلس", c: "دوا بلس", d: "دوا قولوه" }, ans: "b", exp: "Terdapat 11 sifat di dalam Istighna'ullah (Maha Kaya Allah dari yang lain)." },
+                { id: 3, topic: 'Uluhiyyah', qArabic: "الوجود اداله صيفت يغ ترکاندوغ ددالم", qMalay: "Al-Wujud adalah sifat yang terkandung di dalam...", options: { a: "الألوهية", b: "عقائد الإيمان", c: "إِفْتِقَارُ إِلَيْهِ كُلُّ مَا سِوَاهُ", d: "إسْتِغْنَاءُ اللَّهُ عَنْ كُلِّ مَا سِوَاهُ" }, ans: "d", exp: "Sifat Wujud adalah salah satu daripada 11 sifat dalam kategori Istighna'ullah." },
+                { id: 4, topic: 'Uluhiyyah', qArabic: "إِفْتِقَارُ إِلَيْهِ كُلُّ مَا سِوَاه مغاندوغي _____ صیفت.", qMalay: "Iftiqar ilaihi kullu ma siwahu mengandungi _____ sifat.", options: { a: "تیک", b: "سمبيلن", c: "امقت بلس", d: "دوا قولوه لاقن" }, ans: "d", exp: "Bahagian Iftiqar (Berkehendak segalanya kepadaNya) mengandungi 9 sifat wajib." },
+                { id: 5, topic: 'Uluhiyyah', qArabic: "برايكوت اداله صيفت ٢ يع تركاندوغ ددالم إِفْتِقَارُ إِلَيْهِ كُلُّ مَا سِوَاهُ كجوالي", qMalay: "Berikut adalah sifat-sifat yang terkandung di dalam Iftiqaru Ilaihi KECUALI...", options: { a: "القُدْرَة", b: "الإرادة", c: "كَوْنُهُ عَالِمًا", d: "كَوْنُهُ بَصِيرًا" }, ans: "d", exp: "Kaunuhu Basiran (KeadaanNya Maha Melihat) termasuk di dalam bahagian Istighna', bukan Iftiqar." },
+                { id: 6, topic: 'Iman', qArabic: "اعتقاد _____ اداله اعتقاد يع بتول دان بنر.", qMalay: "Iktikad _____ adalah iktikad yang betul dan benar.", options: { a: "معتزلة", b: "قدرية", c: "جبرية", d: "أهل السنة والجماعة" }, ans: "d", exp: "Ahli Sunnah Wal Jamaah adalah satu-satunya manhaj iktikad yang sahih dan selamat." },
+                { id: 7, topic: 'Iman', qArabic: "\" أَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ الله \" اداله لفظ كلمة", qMalay: "'Asyhadu anna Muhammadan Rasulullah' adalah lafaz kalimah...", options: { a: "سومقه", b: "فرجنجين", c: "شهادة قرتام", d: "شهادة كدوا" }, ans: "d", exp: "Lafaz tersebut merupakan bahagian kedua dalam kalimah Syahadah (Syahadah Rasul)." },
+                { id: 8, topic: 'Iman', qArabic: "مانا که انتارا برایکوت تر ما سوق دالم معنا كلمة \"لا إلهَ إِلَّا الله\"؟<br>i. 20 صيفت يع واجب باكي الله<br>ii. 4 صيفت يغ واجب باكي رسول<br>iii. 4 صيفت يغ مستحيل رسول<br>iv. 20 صيفت يع مستحيل اتسن الله", qMalay: "Manakah antara berikut termasuk dalam makna kalimah 'La ilaha illallah'?", options: { a: "i دان ii", b: "ii دان iii", c: "i دان iv", d: "i دان iii" }, ans: "c", exp: "Kalimah pertama Syahadah (Ketuhanan) mencakupi 41 Aqaidul Iman (20 Wajib Allah, 20 Mustahil Allah, 1 Harus Allah)." },
+                { id: 9, topic: 'Iman', qArabic: "سبابق - بابق عقائد الإيمان یغ ترما سوق ددالم كلمة دأتس اياله", qMalay: "Sebanyak-banyak Aqaidul Iman yang termasuk di dalam kalimah di atas ialah...", options: { a: "ليم قولوه (50)", b: "انم قولوه دوا (62)", c: "انم قولوه لاقن (68)", d: "انم قولوه سمبيلن (69)" }, ans: "a", exp: "Berdasarkan rujukan asas tauhid SDEA, jumlah keseluruhan Aqaidul Iman dalam kalimah Syahadah adalah 50." },
+                { id: 10, topic: 'Nubuwwah', qArabic: "ركن _____ يغ كأمفت ایاله برايمان كقد نبي دان رسول.", qMalay: "Rukun _____ yang keempat ialah beriman kepada nabi dan rasul.", options: { a: "ایمان", b: "إسلام", c: "عبادة", d: "شرع" }, ans: "a", exp: "Rukun Iman keempat ialah beriman kepada rasul-rasul." },
+                { id: 11, topic: 'Nubuwwah', qArabic: "افاكه ارتي \" نبي \" دري سكي بهاس؟", qMalay: "Apakah erti 'Nabi' dari segi bahasa?", options: { a: "برایمان", b: "موليا", c: "يع تيغكي", d: "بر اخلاق" }, ans: "c", exp: "Nabi berasal dari perkataan Naba' yang bermaksud tempat yang tinggi atau pemberi khabar." },
+                { id: 12, topic: 'Nubuwwah', qArabic: "\"للاكي فيليهن الله دان ميمفايكن وحي كقد ماء نسي دان جين\". قرياتاءن دأتس اداله فغرتين باكي", qMalay: "Lelaki pilihan Allah dan menyampaikan wahyu kepada manusia dan jin. Pernyataan di atas adalah pengertian bagi...", options: { a: "نبي", b: "ملائكة", c: "رسول", d: "ماءنسي" }, ans: "c", exp: "Rasul menerima wahyu untuk diamalkan dan diwajibkan menyampaikannya (Tabligh) kepada manusia." },
+                { id: 13, topic: 'Nubuwwah', qArabic: "حكمه دأوتوسكن رسول اياله", qMalay: "Hikmah diutuskan rasul ialah...", options: { a: "اونتوق مغاول", b: "بلاجردان ملاتيه", c: "مغوبه قر لمباكاءن", d: "مغاجردان مميمقين ماءنسي" }, ans: "d", exp: "Rasul memimpin dan mengeluarkan umat manusia dari kegelapan jahiliah kepada cahaya tauhid." },
+                { id: 14, topic: 'Nubuwwah', qArabic: "ميمفايكن فرخبرن تنتع هاري قيامة اداله توكس.", qMalay: "Menyampaikan perkhabaran tentang hari kiamat adalah tugas...", options: { a: "ملائكة", b: "کورو", c: "رسول", d: "ماءنسي" }, ans: "c", exp: "Selain membawa syariat Islam, para Rasul memberi amaran (Nadzir) tentang balasan hari Kiamat." },
+                { id: 15, topic: 'Nubuwwah', qArabic: "برايكوت اداله صيفت واجب باكي نبي دان رسول كجوالي", qMalay: "Berikut adalah sifat wajib bagi nabi dan rasul KECUALI...", options: { a: "تبليغ", b: "بلادة", c: "امانة", d: "صدق" }, ans: "b", exp: "Baladah bermaksud bodoh, ia merupakan sifat mustahil bagi Rasul (Lawannya Fatanah - Bijaksana)." },
+                { id: 16, topic: 'Nubuwwah', qArabic: "اقاکه حکوم ستياف مكلف مغتاهوءي بيلغن رسول سچارا تفصيلي؟", qMalay: "Apakah hukum setiap mukalaf mengetahui bilangan rasul secara tafsili?", options: { a: "سنة", b: "هاروس", c: "فرض عين", d: "فرض کفایه" }, ans: "c", exp: "Menjadi Fardu Ain ke atas setiap Muslim menghafal 25 orang rasul secara terperinci." },
+                { id: 17, topic: 'Nubuwwah', qArabic: "ماء نسي قرتام يغ دچیتا اوليه الله اداله نبي.", qMalay: "Manusia pertama yang dicipta oleh Allah adalah nabi...", options: { a: "أدم", b: "إسحاق", c: "إبراهيم", d: "محمد" }, ans: "a", exp: "Nabi Adam A.S adalah manusia merangkap khalifah dan nabi yang pertama diciptakan Allah." },
+                { id: 18, topic: 'Suhuf', qArabic: "برايکوت اداله نام کتاب دان رسول يغ منريمان.<br>i. القرءان - نبي محمد<br>ii. توراة - نبي داود<br>iii. انجيل - نبي عيسى<br>iv. زبور - نبي موسى", qMalay: "Berikut adalah nama kitab dan rasul yang menerimanya.", options: { a: "i دان ii", b: "i دان iii", c: "ii دان iii", d: "iii دان iv" }, ans: "b", exp: "Padanan yang salah ialah Taurat (sepatutnya Musa) dan Zabur (sepatutnya Daud). Yang betul adalah i dan iii." },
+                { id: 19, topic: 'Suhuf', qArabic: "اقاکه کاندوغن کتاب زبور.", qMalay: "Apakah kandungan kitab Zabur?", options: { a: "بريتا", b: "لارغن", c: "فرخبرن", d: "ذيكير" }, ans: "d", exp: "Kitab Zabur mengandungi puji-pujian, zikir, dan nasihat tanpa membawa hukum syariat yang baru." },
+                { id: 20, topic: 'Suhuf', qArabic: "اقاكه معجزة تربسر نبي محمد ﷺ ؟", qMalay: "Apakah mukjizat terbesar Nabi Muhammad SAW?", options: { a: "كتاب توراة", b: "کتاب زبور", c: "کتاب انجیل", d: "كتاب القراءن" }, ans: "d", exp: "Al-Quran adalah mukjizat agung (Maknawi) yang terpelihara hingga hari Kiamat." }
             ],
-            fillPool: ["امقت", "ساتو", "قَالَ كَلَّا إِنَّ مَعِيَ رَبِّي", "كَلَّا لَا وَزَرَ", "تيدق هاروس برهنتي", "هاروس برهنتي دان مولاكن سمولا"],
+            
+            fillPool: ["واجب", "الكلام", "50 فركارا", "23 تاهون", "نبي موسى", "نبي إبراهيم"],
             fillData: [
-                { id: 21, q: "جومله بهاكين قاعدة وقف قد كلمة \"كلا \".", ans: "امقت", exp: "Terdapat 4 kaedah waqaf pada kalimah 'Kalla'." },
-                { id: 22, q: "قاعده وقف قد كلمة \" ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ \".", ans: "تيدق هاروس برهنتي", exp: "Pada kalimah ini (Surah At-Takathur), tidak diharuskan berhenti pada 'Kalla' semata-mata." },
-                { id: 23, q: "حكوم \"كلا \" قد \" شُرَكَاءَ كَلَّا بَلْ هُوَ اللَّهُ \".", ans: "هاروس برهنتي دان مولاكن سمولا", exp: "Di sini 'Kalla' berfungsi sebagai penafian, diharuskan berhenti dan memulakan semula selepasnya." },
-                { id: 24, q: "چونتوه ايات هاروس برهنتي قد \"كلا\" تتافي اولغ كلمة سبلومن.", ans: "قَالَ كَلَّا إِنَّ مَعِيَ رَبِّي", exp: "Ayat dari surah As-Syu'ara'." },
-                { id: 25, q: "چونتوه آیات تيدق هاروس برهنتي تتافي لبيه باءيق ممولا كن.", ans: "كَلَّا لَا وَزَرَ", exp: "Ayat dari surah Al-Qiyamah." }
+                { id: 21, q: "_____ صيفت إسْتِغْنَاءُ اللَّهِ عَنْ كُلِّ مَا سِوَاهُ.", ans: "الكلام", exp: "Sifat Kalam (Allah Maha Berkata-kata) tidak berhajat kepada suara atau makhluk, membuktikan Dia Maha Terkaya (Istighna')." },
+                { id: 22, q: "سكورغ - كورغ عقائد الإيمان ددالم دوا كلمة شهادة .", ans: "50 فركارا", exp: "50 rantaian Aqaidul Iman terangkum utuh secara ijmali dalam mengucap dua kalimah syahadah." },
+                { id: 23, q: "حکوم برایمان كقد نبي دان رسول.", ans: "واجب", exp: "Beriman kepada Rasul adalah rukun iman yang keempat yang fardu diyakini." },
+                { id: 24, q: "نبي يغ برصبر داتس كظاليمن فرعون.", ans: "نبي موسى", exp: "Nabi Musa A.S adalah Rasul Ulul Azmi yang mendepani kekejaman kerajaan Firaun di Mesir." },
+                { id: 25, q: "تيمقوه القراءن دتورو نکن سچا را بر فریغکت - فریغکت .", ans: "23 تاهون", exp: "Al-Quran diwahyukan secara berperingkat selama 23 tahun (13 tahun di Makkah, 10 tahun di Madinah)." }
             ],
+
             matchData: [
-                { id: 26, q: "فَيَسْخَرُونَ مِنْهُم", ans: "تفخيم (تبل)", opts: ["تفخيم (تبل)", "ترقیق (نيفيس)"] },
-                { id: 27, q: "وَرِزْقٌ كَرِيمٌ", ans: "ترقیق (نيفيس)", opts: ["تفخيم (تبل)", "ترقیق (نيفيس)"] },
-                { id: 28, q: "ارْجِعِي إِلَى", ans: "تفخيم (تبل)", opts: ["تفخيم (تبل)", "ترقیق (نيفيس)"] },
-                { id: 29, q: "أَنْ أَنذِرْ قَوْمَكَ", ans: "ترقیق (نيفيس)", opts: ["تفخيم (تبل)", "ترقیق (نيفيس)"] },
-                { id: 30, q: "وَاعْفُ عَنَّا وَاغْفِرْ لَنَا", ans: "ترقیق (نيفيس)", opts: ["تفخيم (تبل)", "ترقیق (نيفيس)"] }
+                { id: 26, q: "جومله قارا نبي", ans: "124,000 اورغ", opts: ["5 اورغ", "6 اورغ", "25 اورغ", "313 اورغ", "124,000 اورغ"] },
+                { id: 27, q: "جومله قارا رسول", ans: "313 اورغ", opts: ["5 اورغ", "6 اورغ", "25 اورغ", "313 اورغ", "124,000 اورغ"] },
+                { id: 28, q: "جومله رسول يغ واجب دكتاهوءي", ans: "25 اورغ", opts: ["5 اورغ", "6 اورغ", "25 اورغ", "313 اورغ", "124,000 اورغ"] },
+                { id: 29, q: "جومله رسول أولو العزم", ans: "5 اورغ", opts: ["5 اورغ", "6 اورغ", "25 اورغ", "313 اورغ", "124,000 اورغ"] },
+                { id: 30, q: "جومله رسول يغ ممقوياءي شريعة", ans: "6 اورغ", opts: ["5 اورغ", "6 اورغ", "25 اورغ", "313 اورغ", "124,000 اورغ"] }
             ],
-            mindTitle: "حروف قَوِيَّة",
-            mindPool: ["ب", "ج", "د", "ص", "ض", "ط", "ق", "ك"],
-            mindAnswers: ["ب", "ج", "د", "ص", "ض"],
+
+            mindTitle: "كاندوغن القرءان",
+            mindPool: ["تَوْحِيد / عَقِيدَة", "عِبَادَة", "أَخْلَاق", "حُكُوم حَاكَم", "قِيصَه نَبِي / سَجَارَه"],
+            mindValid: ["تَوْحِيد / عَقِيدَة", "عِبَادَة", "أَخْلَاق", "حُكُوم حَاكَم", "قِيصَه نَبِي / سَجَارَه"],
+            
             berstrukturData: [
-                { id: 36, q: "(أ) افاكه فغرتين ادغام قد ايستيله؟<br><br>(ب) توليس فغرتين ادغام برايكوت.<br>i. ادغام صغير:<br>ii. ادغام كبير:", ans: "(أ) مَمَاسُوقْكَن حُرُوف مَاتِي كَدَالَم حُرُوف هِيدُوف سَهِينْگَ مَنْجَادِي سَاتُو حُرُوف يَع بَرْشَدَّة.<br><br>(ب) i. صَغِير: حُرُوف فَرْتَامَ مَاتِي دَان حُرُوف كَدُوَا بَرْبَارِيس.<br>ii. كَبِير: كَدُوَا-دُوَا حُرُوف بَرْبَارِيس (هِيدُوف).", marks: 6, exp: "Idgham bermaksud memasukkan huruf." },
-                { id: 37, q: "(أ) برافا كه قدر حركة باچاءن حروف لام قد كلمة \" الله \" كتيك برسامبوغ؟<br><br>(ب) پاتاکن حکوم با چاءن حروف لام (ل) قد كلمة الله (لفظ الجلالة) برايكوت.<br>i. اللَّهُ يَعْلَمُ:<br>ii. وَأَقْسَمُوا بِاللَّهِ:", ans: "(أ) دُوَا (2) حَرَكَة.<br><br>(ب) i. تَفْخِيم (تَبَل) - كَرَانَ بَرْبَارِيس اَتَس / دِهَادَفَن سَبَلُومپَ.<br>ii. تَرْقِيق (نِيفِيس) - كَرَانَ بَرْبَارِيس بَاوَه (بِـ) سَبَلُومپَ.", marks: 6, exp: "Lafzul Jalalah dibaca tebal jika didahului baris atas/hadapan." },
-                { id: 38, q: "(أ) اقاكه فغرتين وقف منوروت ايستيله؟<br><br>(ب) پاتاکن مقصود باكي تندا وقف برايكوت.<br>i. قلى:<br>ii. صلى:", ans: "(أ) مَمُوتُوسْكَن سُوَارَا كَتِيكَ مَمْبَچَ القُرْءَان أُونْتُوق بَرْنَافَس دَغَن نِيَّة مَپَامْبُوغ بَچَاءَن سَمُولَا.<br><br>(ب) i. قلى: بَرْهَنْتِي لَبِيه أُوتَامَ (الوَقْفُ أَوْلَى).<br>ii. صلى: مَپَامْبُوغ لَبِيه أُوتَامَ (الوَصْلُ أَوْلَى).", marks: 6, exp: "Waqaf adalah amalan memberhentikan bacaan untuk bernafas." },
-                { id: 39, q: "(أ) اقاکه مقصود ابتداء قد ايستيله؟<br><br>(ب) توليس دوا بهاكين ابتداء مغيكوت امام السيوطي.", ans: "(أ) مَمُولَاكَن بَچَاءَن القُرْءَان سَلَفَس وَقَف أَتَاو مَمُولَاكَن بَچَاءَن يَع بَارُو.<br><br>(ب) ١. إِبْتِدَاء حَسَن (بَائِيق)<br>٢. إِبْتِدَاء قَبِيح (بُورُوق)", marks: 6, exp: "Ibtida' mesti dimulakan pada makna ayat yang tidak rosak." },
-                { id: 40, q: "(أ) اقاكه تندا وقَفْ لازم؟<br><br>(ب) توليس دوا نام لاءين باكي وقف لازم.", ans: "(أ) حُرُوف مِيم كَچِيل (م).<br><br>(ب) ١. وَقَف وَاجِب<br>٢. وَقَف بَيَان / وَقَف تَام", marks: 6, exp: "Waqaf Lazim menuntut pembaca berhenti agar makna tidak disalah fahami." }
+                { id: 36, q: "(أ) برافاكه بهاكين الألوهية ؟<br><br>(ب) توليس بهاكين الألوهية.", ans: "(أ) دُوَا (2) بَهَاگِين.<br><br>(ب) ١. إِسْتِغْنَاءُ اللَّهِ عَنْ كُلِّ مَا سِوَاهُ<br>٢. إِفْتِقَارُ إِلَيْهِ كُلُّ مَا سِوَاهُ", marks: 6, exp: "Al-Uluhiyyah terbahagi kepada dua asas ketuhanan (Maha Kaya & Makhluk berkehendak kepada-Nya)." },
+                { id: 37, q: "(أ) افاكه ارتي رسول قد بهاس؟<br><br>(ب) توليس قربيذاءن انتارا نبي دان رسول.", ans: "(أ) اُوتُوسَن (Utusan).<br><br>(ب) ١. رَسُولُ دِأُوتُوسْكَن دَغَن شَرِيعَة بَارُو, نَبِي مَنَرُوسْكَن شَرِيعَة سَبَلُومن.<br>٢. رَسُولُ وَاجِبْ مَپَمْفَايْكَن وَحْيُ كَفَد أُمَّت (تَبْلِيغ), نَبِي حَاپَ أُونْتُوق دِيرِي سَنْدِيرِي.", marks: 6, exp: "Walaupun semua Rasul adalah Nabi, tidak semua Nabi itu tarafnya Rasul." },
+                { id: 38, q: "(أ) برافا كه صیفت يع واجب باكي رسول؟<br><br>(ب) توليس ارتي صيفت ۲ برايكوت:<br>أ. صِدْقُ:<br>ii. كذب:", ans: "(أ) أَمْفَت (4) صِيفَت.<br><br>(ب) أ. صِدْقُ : بَنَر / بَرْكَتَ بَنَر (Benar).<br>ii. كِذْبٌ : بَرْدُسْتَا / بُوهُوغ (Bohong).", marks: 6, exp: "Sifat wajib Rasul (Siddiq, Amanah, Tabligh, Fatanah) adalah benteng kepercayaan utusan Ilahi." },
+                { id: 39, q: "(أ) سياقا كه نبي يغ فاليغ اوتام دأنتارا سكالين نبي دان رسول ؟<br><br>(ب) سنار ایکن دوا اورغ رسول أولو العزم.", ans: "(أ) نَبِي مُحَمَّد ﷺ.<br><br>(ب) (Pilih mana-mana 2):<br>١. نَبِي نُوح العَلَيْهِ السَّلَام<br>٢. نَبِي إِبْرَاهِيم العَلَيْهِ السَّلَام<br>٣. نَبِي مُوسَى العَلَيْهِ السَّلَام<br>٤. نَبِي عِيسَى العَلَيْهِ السَّلَام", marks: 6, exp: "Ulul Azmi dikurniakan kepada 5 rasul yang paling utuh kecekalan dan kesabaran mereka berdepan keperitan dakwah." },
+                { id: 40, q: "توليس بيلغن صحف باكي رسول ۲ برايكوت.<br>i. نبي أدم:<br>ii. نبي إبراهيم:<br>iii. نبي موسى:", ans: "i. نَبِي أَدَم: 10 صُحُف<br>ii. نَبِي إِبْرَاهِيم: 10 صُحُف<br>iii. نَبِي مُوسَى: 10 صُحُف (Sblum Taurat)", marks: 6, exp: "Suhuf adalah lembaran wahyu yang kurang menyeluruh berbanding Kitab Samawi." }
             ]
         };
 
@@ -337,7 +336,7 @@
                 kpiText.innerText = 'SKEMA';
                 renderMatching(); // Reset matching to view answers
             } else {
-                btnKuiz.className = 'px-3.5 py-1.5 rounded-md transition-all shadow-sm bg-blue-500 text-white font-semibold';
+                btnKuiz.className = 'px-3.5 py-1.5 rounded-md transition-all shadow-sm bg-indigo-500 text-white font-semibold';
                 btnSkema.className = 'px-3.5 py-1.5 rounded-md transition-all text-white/80 hover:text-white';
                 kpiText.innerText = 'KUIZ UJIAN';
                 renderMatching(); // Reset matching to interactive
@@ -375,9 +374,9 @@
                     if (currentMode === 'skema') {
                         const isCorrect = opt === q.ans;
                         optionsHtml += `
-                            <div class="p-3 rounded-lg border text-sm flex flex-col gap-1 ${isCorrect ? 'bg-blue-50 border-blue-400 font-bold text-blue-900 shadow-sm' : 'bg-slate-50 border-slate-200 text-slate-600'}">
+                            <div class="p-3 rounded-lg border text-sm flex flex-col gap-1 ${isCorrect ? 'bg-indigo-50 border-indigo-400 font-bold text-indigo-900 shadow-sm' : 'bg-slate-50 border-slate-200 text-slate-600'}">
                                 <span class="font-jawi text-xl text-right">${optText}</span>
-                                <span class="text-xs font-sans text-left ${isCorrect ? 'text-blue-700' : 'text-slate-400'}">(${opt.toUpperCase()})</span>
+                                <span class="text-xs font-sans text-left ${isCorrect ? 'text-indigo-700' : 'text-slate-400'}">(${opt.toUpperCase()})</span>
                             </div>
                         `;
                     } else {
@@ -400,14 +399,13 @@
                     <div>
                         <div class="flex items-center justify-between gap-2 mb-3 border-b border-slate-100 pb-2">
                             <span class="text-xs font-bold bg-slate-100 text-slate-600 px-3 py-1 rounded-md border border-slate-200">Soalan ${q.id}</span>
-                            <span class="text-[10px] uppercase font-bold text-slate-400">${q.topic}</span>
                         </div>
                         <h3 class="font-jawi text-2xl font-bold text-slate-900 text-right leading-relaxed mb-1">${q.qArabic}</h3>
                         <p class="text-xs text-slate-500 mb-5 pb-2">${q.qMalay}</p>
                         <div class="grid grid-cols-2 gap-3 mb-4">${optionsHtml}</div>
                     </div>
                     <div class="pt-4 border-t border-slate-100 text-xs text-slate-600 bg-slate-50/70 -mx-5 -mb-5 p-4 rounded-b-xl">
-                        <span class="font-bold text-blue-700 block mb-1">💡 Huraian Skema:</span>
+                        <span class="font-bold text-indigo-700 block mb-1">💡 Huraian:</span>
                         <p class="leading-relaxed text-slate-600">${q.exp}</p>
                     </div>
                 `;
@@ -446,10 +444,10 @@
                         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                             <div class="flex-grow w-full">
                                 <span class="text-xs font-bold bg-slate-100 text-slate-600 px-3 py-1 rounded-md mb-2 inline-block">Soalan ${q.id}</span>
-                                <h3 class="font-jawi text-2xl font-bold text-slate-900 text-right leading-loose">${q.q}</h3>
+                                <h3 class="font-jawi text-2xl font-bold text-slate-900 text-right leading-loose">${q.q.replace('_____', '<span class="inline-block w-20 border-b-2 border-slate-300 mx-2"></span>')}</h3>
                             </div>
                             <div class="text-right whitespace-nowrap mt-2 sm:mt-0">
-                                <span class="inline-block bg-blue-100 border border-blue-300 text-blue-900 font-jawi text-xl font-bold px-5 py-2 rounded-xl shadow-sm">
+                                <span class="inline-block bg-indigo-100 border border-indigo-300 text-indigo-900 font-jawi text-xl font-bold px-5 py-2 rounded-xl shadow-sm">
                                     ${q.ans}
                                 </span>
                             </div>
@@ -468,7 +466,7 @@
             container.innerHTML = '';
             
             activeData.matchData.forEach(q => {
-                let optionsDropdown = `<select ${currentMode === 'skema' ? 'disabled' : ''} onchange="handleMatchChange(this, '${q.ans}')" class="font-jawi text-xl p-2 rounded-lg border ${currentMode === 'skema' ? 'bg-blue-50 border-blue-300 text-blue-900 font-bold' : 'bg-white border-slate-300 text-slate-700'} w-48 text-right cursor-pointer outline-none">`;
+                let optionsDropdown = `<select ${currentMode === 'skema' ? 'disabled' : ''} onchange="handleMatchChange(this, '${q.ans}')" class="font-jawi text-xl p-2 rounded-lg border ${currentMode === 'skema' ? 'bg-indigo-50 border-indigo-300 text-indigo-900 font-bold' : 'bg-white border-slate-300 text-slate-700'} w-48 text-right cursor-pointer outline-none">`;
                 
                 if (currentMode === 'kuiz') {
                     optionsDropdown += `<option value="" disabled selected>فيليه جوافن...</option>`;
@@ -505,6 +503,8 @@
         }
 
         function renderMindMap() {
+            document.getElementById('mindmap-center-title').innerText = activeData.mindTitle;
+
             const pool = document.getElementById('mindmap-pool');
             pool.innerHTML = '';
             activeData.mindPool.forEach(opt => {
@@ -517,11 +517,11 @@
 
             const nodesContainer = document.getElementById('mindmap-nodes');
             nodesContainer.innerHTML = '';
-            activeData.mindAnswers.forEach((ans, idx) => {
+            activeData.mindValid.forEach((ans, idx) => {
                 nodesContainer.innerHTML += `
                     <div class="rounded-xl border-2 border-slate-200 bg-white p-5 text-center shadow-sm flex flex-col items-center justify-center min-h-[120px]">
                         <span class="text-[10px] uppercase font-bold text-slate-400 block mb-2 tracking-widest">Ruang ${idx + 1}</span>
-                        <div class="font-jawi text-4xl font-bold text-blue-700">${ans}</div>
+                        <div class="font-jawi text-3xl font-bold text-indigo-700">${ans}</div>
                     </div>
                 `;
             });
@@ -542,9 +542,9 @@
                             <h3 class="font-jawi text-2xl font-bold text-slate-900 text-right leading-loose">${q.q}</h3>
                         </div>
 
-                        <div class="bg-blue-50/50 p-5 rounded-xl border border-blue-100 text-right relative overflow-hidden">
-                            <div class="absolute left-0 top-0 bottom-0 w-1 bg-blue-500"></div>
-                            <span class="text-[10px] text-blue-600 font-bold block font-sans mb-3 tracking-widest uppercase text-left">Skema Jawapan Rasmi:</span>
+                        <div class="bg-indigo-50/50 p-5 rounded-xl border border-indigo-100 text-right relative overflow-hidden">
+                            <div class="absolute left-0 top-0 bottom-0 w-1 bg-indigo-400"></div>
+                            <span class="text-[10px] text-indigo-600 font-bold block font-sans mb-3 tracking-widest uppercase text-left">Skema Jawapan Rasmi:</span>
                             <p class="font-jawi text-2xl font-bold text-sys-900 leading-loose">${q.ans}</p>
                         </div>
                         
@@ -569,7 +569,7 @@
                     labels: ['Bahagian Alif (40m)', 'Bahagian Ba (60m)'],
                     datasets: [{
                         data: [40, 60],
-                        backgroundColor: ['#1d4ed8', '#60a5fa'],
+                        backgroundColor: ['#4f46e5', '#818cf8'],
                         borderWidth: 2, 
                         borderColor: '#ffffff'
                     }]
@@ -586,11 +586,11 @@
             chartsInstance.topics = new Chart(topicsCtx, {
                 type: 'bar',
                 data: {
-                    labels: activeData.statLabels,
+                    labels: ['Ketuhanan', 'Kenabian', 'Suhuf'],
                     datasets: [{
                         label: 'Bilangan Soalan',
-                        data: [activeData.stats.t1, activeData.stats.t2],
-                        backgroundColor: ['#1e40af', '#3b82f6'],
+                        data: [9, 8, 3], // 9 Uluhiyyah/Iman, 8 Nubuwwah, 3 Suhuf
+                        backgroundColor: ['#4f46e5', '#6366f1', '#818cf8'],
                         borderRadius: 6,
                         barPercentage: 0.5
                     }]
@@ -599,7 +599,7 @@
                     responsive: true, 
                     maintainAspectRatio: false, 
                     scales: { 
-                        y: { beginAtZero: true, max: 15, ticks: { stepSize: 5, font: { size: 10 } } }, 
+                        y: { beginAtZero: true, max: 10, ticks: { stepSize: 2, font: { size: 10 } } }, 
                         x: { ticks: { font: { size: 11, family: "'Plus Jakarta Sans', sans-serif" } } } 
                     }, 
                     plugins: { legend: { display: false } } 
